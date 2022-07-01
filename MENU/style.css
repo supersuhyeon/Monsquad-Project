@@ -13,6 +13,11 @@ img{
     display: block;
 }
 
+a{
+    text-decoration: none;
+    color: #333;
+}
+
 /* Menu Section */
 .leftmenubar{
     width: 15vw;
