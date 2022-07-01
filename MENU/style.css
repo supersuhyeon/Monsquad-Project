@@ -98,13 +98,31 @@ img{
 }
 
 .bottommenu .menutext ul li{
+border: 2px solid #333;
+height: calc(92vw/11);
+padding: 20px 10px;
+font-size: 40px;
+font-weight: 800;
+box-sizing: border-box;
+}
 
+.bottommenu .menutext ul li:first-child{
+border-top: 0;
 }
 
 .bottommenu .menuimg{
     width: calc(85vw/2);
     height: 100%;
     background-color: brown;
+}
+
+.bottommenu .menuimg .swiper-container{
+
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
 }
 
 
