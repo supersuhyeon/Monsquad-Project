@@ -138,7 +138,7 @@ border-top: 0;
 
 .menuimg .swiper-pagination{
    position: absolute;
-   left: 230px !important;
+   left: 280px !important;
 }
 
 .menuimg .swiper-pagination .swiper-pagination-bullet{
@@ -163,7 +163,7 @@ background-image: url("./menu_img/bullet-on.png");
 /* HEADER SECTION */
 
 header{
-    width: 100%;
+    /* width: 100%; */
     position: relative;
 }
 
@@ -199,4 +199,10 @@ header .badges .badge{
     box-shadow: 4px 4px 10px rgba(0,0,0,.15);
     cursor: pointer;
 
+}
+
+/* MAIN SECTION */
+main{
+    background-image: url("/HOME/home_img/introbgground.png");
+    background-repeat: no-repeat;
 }
