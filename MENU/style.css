@@ -23,6 +23,10 @@ a{
     margin-left: 15vw;
 }
 
+.marginguide{
+    margin-left: 20px;
+}
+
 /* Menu Section */
 .leftmenubar{
     width: 15vw;
@@ -61,7 +65,7 @@ a{
     height: 100%;
     background-color: #fff;
     position: fixed;
-    z-index: 10;
+    z-index: 99;
     transform: translate(-100vw,0);
     /* opacity: 0; */
     transition: opacity 0.8s ease, transform 0.8s 0.3s ease;
@@ -189,6 +193,7 @@ header .badges{
     position: fixed;
     top: 130px;
     right: 12px;
+    z-index: 98;
 }
 
 header .badges .badge{
@@ -203,6 +208,128 @@ header .badges .badge{
 
 /* MAIN SECTION */
 main{
+    position: relative;
+    height: 550px;
+    border-bottom: 4px solid #333;
     background-image: url("/HOME/home_img/introbgground.png");
+    background-size: cover;
     background-repeat: no-repeat;
+}
+
+main .mainintro img{
+position: absolute;
+}
+
+main .mainintro img:first-child{
+top: 120px;
+left: 20%;
+z-index: 90;
+}
+
+main .mainintro img:nth-child(2){
+    top: 260px;
+    left: 255px;
+    width: 80px;
+    height: 50px;
+    z-index: 91;
+}
+
+main .mainintro img:nth-child(2):hover{
+animation: bounce infinite;
+animation-duration: 1s;
+}
+
+main .mainintro img:nth-child(3){
+    top: 450px;
+    left: 580px;
+    width: 80px;
+    height: 50px;
+    z-index: 91;
+}
+
+main .mainintro img:nth-child(3):hover{
+animation: tilt 1s infinite;
+}
+
+main .mainintro img:nth-child(4){
+    top: 470px;
+    left: 360px;
+    width: 80px;
+    height: 50px;
+    z-index: 91;
+}
+
+main .mainintro img:nth-child(4):hover{
+animation: movemove 1s infinite;
+}
+
+main .mainintro img:nth-child(5){
+    top: 120px;
+    left: 180px;
+    width: 100px;
+    height: 50px;
+    z-index: 91;
+}
+
+main .mainintro img:nth-child(5):hover{
+animation: bounce2 2s;
+}
+
+main .mainintro img:nth-child(6){
+    top: 10px;
+    left: 450px;
+    width: 220px;
+    height: 350px;
+    z-index: 89;
+}
+
+main .mainintro img:nth-child(6):hover{
+animation: tilt 1s;    
+}
+
+@keyframes tilt{
+from{transform: rotate(0);}
+30%{transform: rotate(-30deg);}
+50%{transform: rotate(10deg);}
+70%{transform: rotate(-10deg);}
+to{transform: rotate(0deg);} 
+}
+
+@keyframes bounce{
+    from{margin-top:0;}
+    to{margin-top: -20px;}
+}
+
+@keyframes bounce2{
+    from{margin-top:0;}
+    to{margin-top: -50px; transform:rotate(360deg);}
+}
+
+@keyframes movemove{
+    from{transform: translateX(0) ;}
+    50%{transform: translateX(30px);}
+    to{transform: translateX(60px)}
+}
+
+/* SECTION */
+section .newnotice .noticetitle{
+    height: 6vw;
+    border-bottom: 4px solid #333;
+    transition: .3s;
+}
+
+section .newnotice .noticetitle h1{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+section .newnotice .noticetitle:hover{
+background-position: bottom; 
+background-color: #ae5761;
+}
+
+
+section .newnotice .noticebrief p{
+    font-size: 40px;
+    font-weight: 600;
 }
