@@ -91,8 +91,8 @@ a{
 }
 
 .rightmenubar .toplogo img{
-    width: 192px;
-    height: 70px;
+    width: 250px;
+    height: 82px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -119,7 +119,7 @@ a{
     border-bottom: 3px solid #333;
     height: calc(92vw/13);
     padding: 20px 25px;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 800;
     box-sizing: border-box;
 }
@@ -142,7 +142,7 @@ border-top: 0;
 
 .menuimg .swiper-pagination{
    position: absolute;
-   left: 280px !important;
+   left: 340px !important;
 }
 
 .menuimg .swiper-pagination .swiper-pagination-bullet{
@@ -179,8 +179,8 @@ header .home_logo{
 }
 
 header .home_logo img{
-    width: 192px;
-    height: 70px;
+    width: 250px;
+    height: 82px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -222,13 +222,13 @@ position: absolute;
 
 main .mainintro img:first-child{
 top: 120px;
-left: 20%;
+left: 30%;
 z-index: 90;
 }
 
 main .mainintro img:nth-child(2){
     top: 260px;
-    left: 255px;
+    left: 430px;
     width: 80px;
     height: 50px;
     z-index: 91;
@@ -241,7 +241,7 @@ animation-duration: 1s;
 
 main .mainintro img:nth-child(3){
     top: 450px;
-    left: 580px;
+    left: 760px;
     width: 80px;
     height: 50px;
     z-index: 91;
@@ -253,7 +253,7 @@ animation: tilt 1s infinite;
 
 main .mainintro img:nth-child(4){
     top: 470px;
-    left: 360px;
+    left: 530px;
     width: 80px;
     height: 50px;
     z-index: 91;
@@ -265,7 +265,7 @@ animation: movemove 1s infinite;
 
 main .mainintro img:nth-child(5){
     top: 120px;
-    left: 180px;
+    left: 350px;
     width: 100px;
     height: 50px;
     z-index: 91;
@@ -277,7 +277,7 @@ animation: bounce2 2s;
 
 main .mainintro img:nth-child(6){
     top: 10px;
-    left: 450px;
+    left: 650px;
     width: 220px;
     height: 350px;
     z-index: 89;
@@ -321,11 +321,51 @@ section .newnotice .noticetitle{
 section .newnotice .noticetitle h1{
     font-size: 60px;
     font-weight: 800;
+    padding-top: 10px;
 }
 
-section .newnotice .noticetitle:hover{
-background-position: bottom; 
-background-color: #ae5761;
+
+section .newnotice .noticevideo{
+    height: 700px;
+    background-color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+section .newnotice .noticevideo .youtube_area{
+    width: 1920px;
+    /* background-color: orange; */
+    position: absolute;
+    top: 50%;
+    margin-top: calc(1920px * 9 / 16 / -2);
+}
+
+section .newnotice .noticevideo .youtube_area::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+
+}
+
+section .newnotice .noticevideo .youtube_cover{
+    background-image: url("/HOME/home_img/video_cover_pattern.png");
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#player{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
 }
 
 
@@ -333,3 +373,5 @@ section .newnotice .noticebrief p{
     font-size: 40px;
     font-weight: 600;
 }
+
+
