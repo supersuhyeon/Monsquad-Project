@@ -47,6 +47,10 @@ window.addEventListener('scroll', _.throttle(function(){
             opacity: 0, //객체데이터형태로 넣어야함
             display: 'none'
         })
+        gsap.to('#go-top',.2,{
+            x: 0,
+        })
+
 
     }else{
         // show
@@ -55,8 +59,32 @@ window.addEventListener('scroll', _.throttle(function(){
             opacity: 1, //객체데이터형태로 넣어야함
             display: 'block'
         })
+        gsap.to('#go-top',.2,{
+            x: 100,
+        })
     }
 },300)) //0.3s 단위로 함수 제어
+
+const goTopEl = document.querySelector('#go-top')
+goTopEl.addEventListener('click', (e)=>{
+    // window.scrollTo(0,0)
+gsap.to(window,.7,{
+    scrollTo: 0
+}
+)
+})
+
+
+function floatingObject(selector){
+gsap.to(selector, 1, {
+    y: 20,
+    repeat: -1, //infinite
+    yoyo: true,
+    ease: Power1.easeOut
+} )
+}
+
+floatingObject('.floatingbtn')
 
 
     $(document).ready(function(){
@@ -69,3 +97,4 @@ window.addEventListener('scroll', _.throttle(function(){
           pager: false,
       });
     });
+
