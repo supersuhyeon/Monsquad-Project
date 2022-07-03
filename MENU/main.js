@@ -57,3 +57,8 @@ window.addEventListener('scroll', _.throttle(function(){
         })
     }
 },300)) //0.3s 단위로 함수 제어
+
+
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
