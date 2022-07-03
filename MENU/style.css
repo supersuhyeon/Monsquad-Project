@@ -214,9 +214,10 @@ main{
     position: relative;
     height: 550px;
     border-bottom: 5px solid #333;
-    background-image: url("/HOME/home_img/introbgground.png");
+    /* background-image: url("/HOME/home_img/introbgground.png"); */
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 main .mainintro img{
@@ -224,14 +225,14 @@ main .mainintro img{
 }
 
 main .mainintro img:first-child{
-    top: 120px;
-    left: 30%;
+    top: 0;
+    left: 17%;
     z-index: 90;
 }
 
 main .mainintro img:nth-child(2){
-    top: 260px;
-    left: 430px;
+    top: 230px;
+    left: 310px;
     width: 80px;
     height: 50px;
     z-index: 91;
@@ -244,7 +245,7 @@ main .mainintro img:nth-child(2):hover{
 
 main .mainintro img:nth-child(3){
     top: 450px;
-    left: 760px;
+    left: 700px;
     width: 80px;
     height: 50px;
     z-index: 91;
@@ -256,7 +257,7 @@ main .mainintro img:nth-child(3):hover{
 
 main .mainintro img:nth-child(4){
     top: 470px;
-    left: 530px;
+    left: 420px;
     width: 80px;
     height: 50px;
     z-index: 91;
@@ -267,8 +268,8 @@ animation: movemove 1s infinite;
 }
 
 main .mainintro img:nth-child(5){
-    top: 120px;
-    left: 350px;
+    top: 30px;
+    left: 220px;
     width: 100px;
     height: 50px;
     z-index: 91;
@@ -279,15 +280,21 @@ main .mainintro img:nth-child(5):hover{
 }
 
 main .mainintro img:nth-child(6){
-    top: 10px;
-    left: 650px;
+    top: 230px;
+    right: 160px;
     width: 220px;
     height: 350px;
-    z-index: 89;
+    z-index: 91;
 }
 
 main .mainintro img:nth-child(6):hover{
     animation: tilt 1s; 
+}
+
+main .mainintro img:nth-child(7){
+    top: 45%;
+    left: 17%;
+    z-index: 90;
 }
 
 @keyframes tilt{
@@ -305,7 +312,7 @@ main .mainintro img:nth-child(6):hover{
 
 @keyframes bounce2{
     from{margin-top:0;}
-    to{margin-top: -50px; transform:rotate(360deg);}
+    to{margin-top: -10px; transform:rotate(360deg);}
 }
 
 @keyframes movemove{
@@ -437,7 +444,7 @@ section .newproduct .productwrapper li .producttext h1{
 
 section .newproduct .productwrapper li a{
     width: 100%;
-    height: 40px;
+    height: 50px;
     text-align: center;
     color: #333;
     font-weight: 800;
@@ -449,11 +456,41 @@ section .newproduct .productwrapper li a{
     bottom: 0;
     right: 0;
     border-top: 5px solid #333;
+    transition: 0.2s;
 }
 
 section .newproduct .productwrapper li:hover a{
+    color: #fff;
+}
+
+section .newproduct .productwrapper li .seemore::after{
+    content: '';
+    display: block;
+    border-bottom: 55px solid #ae5761;
+    margin-top: -20px;
+    width: 0;
+    transition: 0.2s;
+
+}
+
+section .newproduct .productwrapper li:hover .seemore::after{
 background-color: #ae5761;
-color: #fff;
+width: 100%;
+}
+
+section .newproduct .productwrapper li .seemore2::after{
+    content: '';
+    display: block;
+    border-bottom: 55px solid #ae5761;
+    margin-top: 10px;
+    width: 0;
+    transition: 0.2s;
+
+}
+
+section .newproduct .productwrapper li:hover .seemore2::after{
+background-color: #ae5761;
+width: 100%;
 }
 
 section .wheretobuy .wheretitle{
@@ -470,14 +507,32 @@ section .wheretobuy .wheretitle h1{
 section .wheretobuy .shoptitle{
     height: 6vw;
     border-bottom: 5px solid #333;
-    background-color: #ae5761;
+    /* background-color: #ae5761; */
 }
+
+section .wheretobuy .shoptitle::after{
+    content: '';
+    display: block;
+    border-bottom: 90.5px solid #ae5761;
+    margin-top: -83px;
+    width: 0;
+    transition: 0.8s;
+
+}
+
+section .wheretobuy .shoptitle:hover::after{
+width: 100%;
+}
+
 section .wheretobuy .shoptitle h1{
     font-size: 65px;
     font-weight: 800;
     padding-top: 5px;
+    transition: 0.4s;
     
 }
+
+section .wheretobuy .shoptitle:hover h1{color: #fff;}
 
 section .wheretobuy .addresswrapper{
     display: flex;
