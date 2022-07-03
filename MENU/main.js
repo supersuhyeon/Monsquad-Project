@@ -60,5 +60,12 @@ window.addEventListener('scroll', _.throttle(function(){
 
 
     $(document).ready(function(){
-      $('.slider').bxSlider();
+      $('.slider').bxSlider({
+          auto: true,
+          speed : 300,
+          autoHover: true,
+          autoControls: false,
+          controls: false,
+          pager: false,
+      });
     });
