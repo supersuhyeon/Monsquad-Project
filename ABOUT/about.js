@@ -64,3 +64,6 @@ gsap.to(window,.7,{
 }
 )
 })
+
+
+Sticker.init('.sticker');

@@ -150,7 +150,7 @@ border-top: 0;
 
 .menuimg .swiper-pagination .swiper-pagination-bullet{
     margin-right: 2px;
-    background-image: url("./menu_img/bullet1.png");
+    background-image: url("/MENU/menu_img/bullet1.png");
     background-repeat: no-repeat;
     width: 77px;
     height: 17px;
@@ -164,7 +164,7 @@ margin-right: 0;
 }
 
 .menuimg .swiper-pagination .swiper-pagination-bullet-active{
-background-image: url("./menu_img/bullet-on.png");
+background-image: url("/MENU/menu_img/bullet-on.png");
 }
 
 /* HEADER SECTION */
@@ -201,6 +201,7 @@ border-bottom: 5px solid #333;
 .aboutintro .abouttitle{
     height: 6vw;
     border-bottom: 5px solid #333;
+    background-color: #ae5761;
 }
 
 .aboutintro .abouttitle h1{
@@ -226,11 +227,27 @@ border-bottom: 5px solid #333;
 
 }
 
-.aboutintro .aboutbrief .aboutstickers img{
-width: 200px;
-height: 200px;
-margin-right: 10px;
+.aboutintro .aboutbrief .aboutstickers .sticker {
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
 }
+
+.example-1 .sticker-img {
+    background-image: url('./about_img/sticker1.png');
+    background-size: cover;
+}
+
+.example-2 .sticker-img {
+    background-image: url('./about_img/sticker2.png');
+    background-size: cover;
+}
+
+.example-3 .sticker-img{
+    background-image: url('./about_img/sticker3.png');
+    background-size: cover;
+}
+
 
 .aboutintro .aboutbrief .aboutstickers img:last-child{
 margin-right: 0;
@@ -298,22 +315,23 @@ section .aboutcolor .colorwrapper .colordetails{
 }
 
 section .aboutcolor .colorwrapper .colordetails span{
-display: block;
-height: calc(300px/3);
-border-bottom: 5px solid #333;
+    display: block;
+    height: calc(300px/3);
+    border-bottom: 5px solid #333;
+    box-sizing: border-box;
 
 }
 
-section .aboutcolor .colorwrapper .colordetails span p::after{
-content: '';
-display: block;
-border-bottom: 100px solid #ae5761;
-margin-top: 5px;
-width: 0;
-transition: 0.8s;
+section .aboutcolor .colorwrapper .colordetails span::after{
+    content: '';
+    display: block;
+    border-bottom: 95px solid #ae5761;
+    margin-top: -98px;
+    width: 0;
+    transition: 0.8s;
 }
 
-section .aboutcolor .colorwrapper .colordetails span p:hover::after{
+section .aboutcolor .colorwrapper .colordetails span:hover::after{
 width: 100%;
 }
 
@@ -321,12 +339,13 @@ section .aboutcolor .colorwrapper .colordetails span p{
     font-size: 40px;
     font-weight: 800;
     padding: 25px;
-    box-sizing: border-box;
+}
+section .aboutcolor .colorwrapper .colordetails span:hover p{
+    color:#fff
 }
 
-
 section .aboutcolor .colorwrapper .colordetails span:nth-child(3){
-border: 0;
+    border-bottom: 5px solid #333;
 }
 
 section .aboutcolor .colorwrapper .onecolor{
