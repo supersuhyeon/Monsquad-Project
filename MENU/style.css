@@ -227,7 +227,7 @@ main .mainintro img{
 main .mainintro img:first-child{
     top: 0;
     left: 17%;
-    z-index: 90;
+    z-index: 80;
 }
 
 main .mainintro img:nth-child(2){
@@ -235,7 +235,7 @@ main .mainintro img:nth-child(2){
     left: 310px;
     width: 80px;
     height: 50px;
-    z-index: 91;
+    z-index: 83;
 }
 
 main .mainintro img:nth-child(2):hover{
@@ -248,7 +248,7 @@ main .mainintro img:nth-child(3){
     left: 750px;
     width: 80px;
     height: 50px;
-    z-index: 93;
+    z-index: 83;
 }
 
 main .mainintro img:nth-child(3):hover{
@@ -260,7 +260,7 @@ main .mainintro img:nth-child(4){
     left: 420px;
     width: 80px;
     height: 50px;
-    z-index: 93;
+    z-index: 83;
 }
 
 main .mainintro img:nth-child(4):hover{
@@ -272,7 +272,7 @@ main .mainintro img:nth-child(5){
     left: 220px;
     width: 100px;
     height: 50px;
-    z-index: 91;
+    z-index: 81;
 }
 
 main .mainintro img:nth-child(5):hover{
@@ -284,7 +284,7 @@ main .mainintro img:nth-child(6){
     right: 160px;
     width: 220px;
     height: 350px;
-    z-index: 92;
+    z-index: 82;
 }
 
 main .mainintro img:nth-child(6):hover{
@@ -294,11 +294,11 @@ main .mainintro img:nth-child(6):hover{
 main .mainintro img:nth-child(7){
     top: 45%;
     left: 17%;
-    z-index: 90;
+    z-index: 80;
 }
 
 main .mainintro img:nth-child(8){
-z-index: 92;
+z-index: 82;
 left: 30%;
 top: 30px;
 transform: rotate(-30deg);

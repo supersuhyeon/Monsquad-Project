@@ -1,0 +1,434 @@
+/* COMMON */
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    overflow-x: hidden;
+    
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.marginspace{
+    margin-left: 15vw;
+}
+
+.marginguide{
+    margin-left: 20px;
+}
+
+/* Menu Section */
+.leftmenubar{
+    width: 15vw;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 5px solid #333;
+
+}
+
+.leftmenubar .menuicon{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 48px;
+    cursor: pointer;
+}
+
+.btnrotate{
+    transform: rotate(-360deg);
+    transition: all 0.8s ease-in-out;
+}
+
+.btnreverse{
+    transform: rotate(180deg);
+    transition: all 0.8s ease-in-out;
+}
+
+.rightmenubar{
+    width: 85vw;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 99;
+    transform: translate(-100vw,0);
+    /* opacity: 0; */
+    transition: opacity 0.8s ease, transform 0.8s 0.3s ease;
+
+}
+
+.rightmenubar.active{
+    transform: translate(15vw,0);
+    /* opacity: 1; */
+    transition: opacity 0.5s ease, transform 0.8s 0.3s ease;
+}
+
+.rightmenubar .toplogo{
+    width: 100%;
+    height: 8vw;
+    /* background-color: blueviolet; */
+    position: relative;
+    border-bottom: 5px solid #333;
+}
+
+.rightmenubar .bottommenu{
+    height: 92vw;
+}
+
+.rightmenubar .toplogo img{
+    width: 250px;
+    height: 82px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.bottommenu{
+    display: flex;
+}
+
+.bottommenu .menutext{
+    width: calc(85vw/2);
+    height: 100%;
+    /* background-color: pink; */
+}
+.bottommenu .menutext ul li{
+    border-bottom: 5px solid #333;
+    height: calc(92vw/13);
+    padding: 15px 20px;
+    font-size: 65px;
+    font-weight: 800;
+    box-sizing: border-box;
+}
+
+.bottommenu .menutext ul li:nth-child(2):hover,
+.bottommenu .menutext ul li:nth-child(3):hover,
+.bottommenu .menutext ul li:nth-child(4):hover,
+.bottommenu .menutext ul li:nth-child(5):hover{
+background-color: #ae5761;
+}
+
+.bottommenu .menutext ul li:first-child{
+border-top: 0;
+}
+
+.bottommenu .menuimg{
+    width: calc(85vw/2);
+    height: 100%;
+    border-left: 5px solid #333;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.menuimg .swiper-pagination{
+   position: absolute;
+   left: 340px !important;
+}
+
+.menuimg .swiper-pagination .swiper-pagination-bullet{
+    margin-right: 2px;
+    background-image: url("./menu_img/bullet1.png");
+    background-repeat: no-repeat;
+    width: 77px;
+    height: 17px;
+    outline: none;
+    background-color: transparent;
+    border-radius: 0%;
+}
+
+.menuimg .swiper-pagination .swiper-pagination-bullet:last-child{
+margin-right: 0;
+}
+
+.menuimg .swiper-pagination .swiper-pagination-bullet-active{
+background-image: url("./menu_img/bullet-on.png");
+}
+
+/* HEADER SECTION */
+header{
+    /* width: 100%; */
+    position: relative;
+}
+
+header .home_logo{
+    width: 100%;
+    height: 8vw;
+    position: relative;
+    border-bottom: 5px solid #333;
+}
+
+header .home_logo img{
+    width: 250px;
+    height: 82px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+
+/* ABOUT SECTION */
+
+.aboutintro{
+border-bottom: 5px solid #333;
+}
+
+.aboutintro .abouttitle{
+    height: 6vw;
+    border-bottom: 5px solid #333;
+}
+
+.aboutintro .abouttitle h1{
+    font-size: 65px;
+    font-weight: 800;
+    padding-top: 5px;
+}
+
+.aboutintro .aboutbrief{
+
+}
+
+.aboutintro .aboutbrief h2{
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.aboutintro .aboutbrief .aboutstickers{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px;
+
+}
+
+.aboutintro .aboutbrief .aboutstickers img{
+width: 200px;
+height: 200px;
+margin-right: 10px;
+}
+
+.aboutintro .aboutbrief .aboutstickers img:last-child{
+margin-right: 0;
+}
+
+.aboutintro .aboutbrief p{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/* SECTION */
+
+section .aboutlogo{
+    border-bottom: 5px solid #333;
+}
+
+section .aboutlogo .logotitle{
+    height: 6vw;
+    border-bottom: 5px solid #333;
+}
+section .aboutlogo .logotitle h1{
+    font-size: 65px;
+    font-weight: 800;
+    padding-top: 5px;
+}
+
+section .aboutlogo .logobrief img{
+    width: 820px;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+
+}
+section .aboutlogo .logobrief p{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+section .aboutcolor{
+    border-bottom: 5px solid #333;
+}
+section .aboutcolor .colortitle{
+    height: 6vw;
+    border-bottom: 5px solid #333;
+}
+
+section .aboutcolor .colortitle h1{
+    font-size: 65px;
+    font-weight: 800;
+    padding-top: 5px;
+}
+
+section .aboutcolor .colorwrapper{
+    border-bottom: 5px solid #333;
+    display: flex;
+}
+
+section .aboutcolor .colorwrapper .colordetails{
+
+    width: calc(85vw/2);
+    height: 300px;
+    border-right: 5px solid #333;
+}
+
+section .aboutcolor .colorwrapper .colordetails span{
+display: block;
+height: calc(300px/3);
+border-bottom: 5px solid #333;
+
+}
+
+section .aboutcolor .colorwrapper .colordetails span p::after{
+content: '';
+display: block;
+border-bottom: 100px solid #ae5761;
+margin-top: 5px;
+width: 0;
+transition: 0.8s;
+}
+
+section .aboutcolor .colorwrapper .colordetails span p:hover::after{
+width: 100%;
+}
+
+section .aboutcolor .colorwrapper .colordetails span p{
+    font-size: 40px;
+    font-weight: 800;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+
+section .aboutcolor .colorwrapper .colordetails span:nth-child(3){
+border: 0;
+}
+
+section .aboutcolor .colorwrapper .onecolor{
+    width: calc(85vw/2);
+    height: 300px;
+    background-color: #ae5761;
+}
+
+section .aboutcolor .colordiverse .topcolor,
+section .aboutcolor .colordiverse .btmcolor{
+    display: flex;
+}
+
+section .aboutcolor .colordiverse .topcolor{
+    border-bottom: 5px solid #333;
+}
+
+section .aboutcolor .colordiverse p{
+    font-size: 40px;
+    font-weight: 800;
+    padding: 25px;
+}
+
+section .aboutcolor .colordiverse .topcolor div,
+section .aboutcolor .colordiverse .btmcolor div{
+    width: calc(85vw/2);
+    height: 300px;
+    border-right: 5px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .aboutcolor .colordiverse .topcolor div:nth-child(2),
+section .aboutcolor .colordiverse .btmcolor div:nth-child(2){
+border: 0;
+}
+
+section .aboutcolor .colordiverse .topcolor div:nth-child(1){
+background-color: #333;
+color: #fff;
+}
+section .aboutcolor .colordiverse .topcolor div:nth-child(2){
+background-color: #fff;
+color: #333;
+}
+section .aboutcolor .colordiverse .btmcolor div:nth-child(1){
+background-color: #fff;
+color: #ae5761;
+}
+
+section .aboutcolor .colordiverse .btmcolor div:nth-child(2){
+background-color: #ae5761;
+color: #333;
+}
+
+
+
+
+
+/* FOOTER SECTION */
+
+
+footer .flogo{
+    margin: 20px 0 10px 0px;
+}
+
+footer .fmenu{
+    display: flex;
+}
+
+footer .fmenu li+li{
+    margin-left: 15px;
+}
+
+footer .fmenu li:last-child{
+    margin-left: none;
+}
+
+footer .fmenu li a{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+footer p{
+    margin: 10px 0 20px 0;
+    font-weight: 600;
+}
+
+#go-top{
+    width: 42px;
+    height: 42px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 81;
+}
