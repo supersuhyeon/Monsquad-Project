@@ -198,6 +198,7 @@ header .home_logo img{
 .collectitle{
     min-height: 6vw;
     border-bottom: 5px solid #333;
+    /* background-color: #ae5761; */
 }
 
 .collectitle h1{
