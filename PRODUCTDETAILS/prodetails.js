@@ -119,11 +119,12 @@ function count(type)  {
     // 결과 출력
     resultElement.innerText = number;
     const stockEl = document.querySelector('.stock')
-    
-    if(number >= 3){
-        stockEl.innerText = "out of stock"
-    }else if(number < 3 && number > 0){
-        stockEl.innerText = "available at amazon"
+
+    if(number >= 2){
+        stockEl.innerHTML = "<img src='/PRODUCTDETAILS/details_img/error.png'> Out of stock"
+        // stockEl.innerText = "out of stock"
+    }else if(number < 2 && number > 0){
+        stockEl.innerHTML = "<img src='/PRODUCTDETAILS/details_img/check.png'> Available on Amazon"
     }else if(number === 0){
         stockEl.innerText = '';
     }

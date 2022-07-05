@@ -252,62 +252,178 @@ section .prowrappers .rightbrief{
     width: calc(100%/2);
 }
 
-section .prowrappers .rightbrief .texts{
-
-}
-
 section .prowrappers .rightbrief .texttitle{
-    padding: 20px;
+    padding: 30px;
 }
 
 section .prowrappers .rightbrief .texttitle h1{
-font-size: 30px;
-font-weight: 800;
-margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
 }
 
 section .prowrappers .rightbrief .texttitle p{
-font-size: 18px;
-font-weight: 600;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 
 section .prowrappers .rightbrief .texttoggle{
 display: flex;
 align-items: center;
+margin-bottom: 20px;
+padding-left: 30px;
 }
 
 section .prowrappers .rightbrief .texttoggle p{
 font-size: 16px;
 font-weight: 600;
-padding: 20px;
 }
 
-section .prowrappers .rightbrief .texttoggle .toggle-icon{
+section .prowrappers .rightbrief .texttoggle .toggle-icon,
+section .prowrappers .rightbrief .texttoggle .toggle-icon2{
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
 }
 
 section .prowrappers .rightbrief .text-description,
 section .prowrappers .rightbrief .text-description2{
-display: none;
-padding: 0 20px 0px;
+    display: none;
+    padding: 0 30px 0px;
 }
 
 section .prowrappers .rightbrief .text-description.hide,
 section .prowrappers .rightbrief .text-description2.hide{
-display: block;
+    display: block;
 }
 
 section .prowrappers .rightbrief .text-description2.hide{
     display: block;
  }
 
- section .prowrappers .rightbrief .qtydetails .qtynumbers{
+section .prowrappers .rightbrief .qtydetails .qtynumbers{
     display:flex;
  }
 
- section .prowrappers .rightbrief .qtydetails .stock{
+section .prowrappers .rightbrief .qtydetails .stock{
     color: red;
+    display: flex;
+    margin-top: 10px;
  }
+
+section .prowrappers .rightbrief .qtydetails .stock img{
+    width: 20px;
+    height: 20px;
+ }
+
+section .prowrappers .rightbrief .colordetails{
+    height: 100px;
+    margin: 30px 0 30px;
+    padding-left: 30px;
+ }
+
+section .prowrappers .rightbrief .colordetails h1{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+ }
+
+section .prowrappers .rightbrief .colordetails .bgcolor{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ae5761;
+    margin-bottom: 20px;
+ }
+
+section .prowrappers .rightbrief .sizedetails{
+    position: relative;
+    height: 100px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+ }
+
+section .prowrappers .rightbrief .sizedetails .sizeguide{
+    position: absolute;
+    top: 0;
+    right: 50px;
+    font-weight: 800;
+    border-bottom: 3px solid #333;
+
+}
+
+section .prowrappers .rightbrief .sizedetails h1{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+ }
+section .prowrappers .rightbrief .sizedetails span{
+    border: 3px solid #333;
+    padding: 10px;
+ }
+
+section .prowrappers .rightbrief .qtydetails{
+    height: 130px;
+    padding-left: 30px;
+}
+
+section .prowrappers .rightbrief .qtydetails h1{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+section .prowrappers .rightbrief .qtydetails .qtynumbers input{
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    font-weight: 800;
+    background-color: #fff;
+    border: 3px solid #333;
+}
+
+section .prowrappers .rightbrief .qtydetails .qtynumbers #result{
+    font-size: 30px;
+    padding: 0 10px 0;
+    font-weight: 800;
+}
+
+section .prowrappers .rightbrief .pricedetails{
+    height: 100px;
+    padding-left: 30px;
+}
+
+section .prowrappers .rightbrief .pricedetails h1{
+ font-size: 50px;
+ font-weight: 800;
+ padding-top: 20px;
+}
+
+section .prowrappers .rightbrief .onlinebtn{
+    height: 100px;
+    background-color: #ae5761;
+    margin-top: 10px;
+    border-top: 5px solid #333;
+    border-bottom: 5px solid #333;
+}
+
+section .prowrappers .rightbrief .onlinebtn a{
+    width: 100%;
+    height: 100%;
+    color: #333;
+    font-size: 65px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 800;
+}
+
+section .prowrappers .rightbrief .onlinebtn:hover a{
+    color: #fff;
+}
 
 /* FOOTER SECTION */
 
