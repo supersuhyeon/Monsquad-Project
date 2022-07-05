@@ -130,4 +130,20 @@ function count(type)  {
     }
   }
 
-  
+  const open = () => {
+    document.querySelector(".modal").classList.remove("hidden");
+    document.body.classList.add("stop-scroll");
+    gsap.to(goTopEl, .6, {
+        opacity: 0,
+        display : 'none'})
+
+  }
+
+  const close = () => {
+    document.querySelector(".modal").classList.add("hidden");
+    document.body.classList.remove("stop-scroll");
+  }
+
+  document.querySelector(".sizeguide").addEventListener("click", open);
+  document.querySelector(".closebtn").addEventListener("click", close);
+  document.querySelector(".bgoverlay").addEventListener("click", close);
