@@ -64,3 +64,69 @@ gsap.to(window,.7,{
 }
 )
 })
+
+//리팩토링필요
+
+const descripEl = document.querySelector('.text-description')
+const descripEl2 = document.querySelector('.text-description2')
+const toggleBtn = document.querySelector('.toggle-icon')
+const toggleBtn2 = document.querySelector('.toggle-icon2')
+let isHideDescription = false;
+
+toggleBtn.addEventListener('click', function(){
+    isHideDescription = !isHideDescription
+    if(isHideDescription){
+        //hide
+        descripEl.classList.add('hide')
+    }else{
+        //show
+        descripEl.classList.remove('hide')
+    }
+})
+
+
+toggleBtn2.addEventListener('click', function(){
+    isHideDescription = !isHideDescription
+    if(isHideDescription){
+        //hide
+        descripEl2.classList.add('hide')
+    }else{
+        //show
+        descripEl2.classList.remove('hide')
+    }
+})
+
+
+
+function count(type)  {
+    // 결과를 표시할 element
+    const resultElement = document.getElementById('result');
+    
+    // 현재 화면에 표시된 값
+    let number = resultElement.innerText;
+    
+    // 더하기/빼기
+    if(type === 'plus') {
+      number = parseInt(number) + 1;
+    }else if(type === 'minus')  {
+      number = parseInt(number) - 1;
+      if(number < 0){
+          return
+      }
+    }
+    
+    
+    // 결과 출력
+    resultElement.innerText = number;
+    const stockEl = document.querySelector('.stock')
+    
+    if(number >= 3){
+        stockEl.innerText = "out of stock"
+    }else if(number < 3 && number > 0){
+        stockEl.innerText = "available at amazon"
+    }else if(number === 0){
+        stockEl.innerText = '';
+    }
+  }
+
+  

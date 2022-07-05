@@ -256,20 +256,58 @@ section .prowrappers .rightbrief .texts{
 
 }
 
-section .prowrappers .rightbrief .texts .texttitle{
+section .prowrappers .rightbrief .texttitle{
     padding: 20px;
 }
 
-section .prowrappers .rightbrief .texts .texttitle h1{
+section .prowrappers .rightbrief .texttitle h1{
 font-size: 30px;
 font-weight: 800;
 margin-bottom: 10px;
 }
 
-section .prowrappers .rightbrief .texts .texttitle p{
-font-size: 16px;
+section .prowrappers .rightbrief .texttitle p{
+font-size: 18px;
 font-weight: 600;
 }
+
+
+section .prowrappers .rightbrief .texttoggle{
+display: flex;
+align-items: center;
+}
+
+section .prowrappers .rightbrief .texttoggle p{
+font-size: 16px;
+font-weight: 600;
+padding: 20px;
+}
+
+section .prowrappers .rightbrief .texttoggle .toggle-icon{
+}
+
+section .prowrappers .rightbrief .text-description,
+section .prowrappers .rightbrief .text-description2{
+display: none;
+padding: 0 20px 0px;
+}
+
+section .prowrappers .rightbrief .text-description.hide,
+section .prowrappers .rightbrief .text-description2.hide{
+display: block;
+}
+
+section .prowrappers .rightbrief .text-description2.hide{
+    display: block;
+ }
+
+ section .prowrappers .rightbrief .qtydetails .qtynumbers{
+    display:flex;
+ }
+
+ section .prowrappers .rightbrief .qtydetails .stock{
+    color: red;
+ }
 
 /* FOOTER SECTION */
 
