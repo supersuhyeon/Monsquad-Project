@@ -315,7 +315,7 @@ section .prowrappers .rightbrief .qtydetails .qtynumbers{
  }
 
 section .prowrappers .rightbrief .qtydetails .stock{
-    color: red;
+    color: #333;
     display: flex;
     margin-top: 10px;
  }
@@ -337,11 +337,29 @@ section .prowrappers .rightbrief .colordetails h1{
     margin-bottom: 10px;
  }
 
+
+ section .prowrappers .rightbrief .colordetails .bgcolors{
+display: flex;
+ }
+
 section .prowrappers .rightbrief .colordetails .bgcolor{
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: #ae5761;
+    background-image: url('/PRODUCTDETAILS/details_img/color.png');
+    background-size: cover;
+    margin-bottom: 20px;
+    margin-right: 20px;
+ }
+
+ section .prowrappers .rightbrief .colordetails .bgcolor2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gainsboro;
+    background-image: url('/PRODUCTDETAILS/details_img/color.png');
+    background-size: cover;
     margin-bottom: 20px;
  }
 
@@ -425,11 +443,17 @@ width: calc(100%/4);
 section .prowrappers .rightbrief .sizedetails h1{
     font-size: 30px;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 27px;
  }
 section .prowrappers .rightbrief .sizedetails span{
     border: 3px solid #333;
     padding: 10px;
+    background-color: #ae5761;
+    font-weight: 800;
+ }
+
+section .prowrappers .rightbrief .sizedetails span:hover{
+color: #fff;
  }
 
 section .prowrappers .rightbrief .qtydetails{

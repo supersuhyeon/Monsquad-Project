@@ -119,12 +119,15 @@ function count(type)  {
     // 결과 출력
     resultElement.innerText = number;
     const stockEl = document.querySelector('.stock')
+    const priceEl = document.querySelector('.pricedetails h1')
 
     if(number >= 2){
-        stockEl.innerHTML = "<img src='/PRODUCTDETAILS/details_img/error.png'> Out of stock"
+        stockEl.innerHTML = "<img src='/PRODUCTDETAILS/details_img/error.png'> Opps, Sorry! It is out of stock"
         // stockEl.innerText = "out of stock"
+        priceEl.style.color = 'red';
     }else if(number < 2 && number > 0){
-        stockEl.innerHTML = "<img src='/PRODUCTDETAILS/details_img/check.png'> Available on Amazon"
+        stockEl.innerHTML = "<img src='/PRODUCTDETAILS/details_img/check.png'> Available on Amazon";
+        priceEl.style.color = '#333';
     }else if(number === 0){
         stockEl.innerText = '';
     }
