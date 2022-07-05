@@ -372,7 +372,7 @@ section .prowrappers .rightbrief .sizedetails{
 
 section .prowrappers .rightbrief .sizedetails .sizeguide{
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 50px;
     font-weight: 800;
     border-bottom: 3px solid #333;
@@ -513,6 +513,64 @@ section .prowrappers .rightbrief .onlinebtn a{
 
 section .prowrappers .rightbrief .onlinebtn:hover a{
     color: #fff;
+}
+
+section .youmay{
+    border-bottom: 5px solid #333;
+}
+
+.youmay .youmaytitle{
+height: 6vw;
+border-bottom: 5px solid #333;
+display: flex;
+}
+
+.youmay .youmaytitle .ybigtitle{
+width: calc(100%/2);
+height: 100%;
+border-right: 5px solid #333;
+box-sizing: border-box;
+}
+
+.youmay .youmaytitle h1{
+font-size: 50px;
+font-weight: 800;
+}
+
+.youmay .youmaytitle span{
+display: block;
+width: calc(100%/2/2);
+border-right: 5px solid #333;
+box-sizing: border-box;
+}
+
+.youmay .youmaytitle span:last-child{
+border-right: 0;
+}
+
+.youmay .slide-wrapper{
+    width: 100%;
+    height: 600px;
+}
+
+.youmay .slide-wrapper .slides{
+    display: flex;
+}
+
+.youmay .slide-wrapper .slides.animated{
+transition: 0.5s ease-out;
+}
+
+.youmay .slide-wrapper .slides li{
+width: calc(100%/4);
+height: 600px;
+border-right: 5px solid #333;
+box-sizing: border-box;
+overflow: hidden;
+}
+
+.youmay .slide-wrapper .slides li:last-child{
+border-right: 0;
 }
 
 /* FOOTER SECTION */
