@@ -128,6 +128,13 @@ a{
 background-color: #ae5761;
 }
 
+.bottommenu .menutext ul li:nth-child(2):hover a,
+.bottommenu .menutext ul li:nth-child(3):hover a,
+.bottommenu .menutext ul li:nth-child(4):hover a,
+.bottommenu .menutext ul li:nth-child(5):hover a{
+color: #fff;
+}
+
 .bottommenu .menutext ul li:first-child{
 border-top: 0;
 }
@@ -449,7 +456,7 @@ section .prowrappers .rightbrief .sizedetails span{
     border: 3px solid #333;
     padding: 10px;
     background-color: #ae5761;
-    font-weight: 800;
+    font-weight: 600;
  }
 
 section .prowrappers .rightbrief .sizedetails span:hover{

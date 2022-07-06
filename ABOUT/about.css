@@ -128,6 +128,13 @@ a{
 background-color: #ae5761;
 }
 
+.bottommenu .menutext ul li:nth-child(2):hover a,
+.bottommenu .menutext ul li:nth-child(3):hover a,
+.bottommenu .menutext ul li:nth-child(4):hover a,
+.bottommenu .menutext ul li:nth-child(5):hover a{
+color: #fff;
+}
+
 .bottommenu .menutext ul li:first-child{
 border-top: 0;
 }
@@ -201,7 +208,7 @@ border-bottom: 5px solid #333;
 .aboutintro .abouttitle{
     height: 6vw;
     border-bottom: 5px solid #333;
-    background-color: #ae5761;
+    /* background-color: #ae5761; */
 }
 
 .aboutintro .abouttitle h1{

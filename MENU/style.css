@@ -128,6 +128,13 @@ a{
 background-color: #ae5761;
 }
 
+.bottommenu .menutext ul li:nth-child(2):hover a,
+.bottommenu .menutext ul li:nth-child(3):hover a,
+.bottommenu .menutext ul li:nth-child(4):hover a,
+.bottommenu .menutext ul li:nth-child(5):hover a{
+color: #fff;
+}
+
 .bottommenu .menutext ul li:first-child{
 border-top: 0;
 }
@@ -342,7 +349,6 @@ section .newnotice .noticetitle{
     height: 6vw;
     border-bottom: 5px solid #333;
     transition: .3s;
-    background-color: #ae5761;
 }
 
 section .newnotice .noticetitle h1{
@@ -453,7 +459,7 @@ section .newproduct .productwrapper li .producttext h1{
     text-align: center;
 }
 
-section .newproduct .productwrapper li a{
+section .newproduct .productwrapper li .seemore a{
     width: 100%;
     height: 50px;
     text-align: center;
@@ -470,7 +476,7 @@ section .newproduct .productwrapper li a{
     transition: 0.2s;
 }
 
-section .newproduct .productwrapper li:hover a{
+section .newproduct .productwrapper li:hover .seemore a{
     color: #fff;
 }
 
@@ -485,11 +491,11 @@ section .newproduct .productwrapper li .seemore::after{
 }
 
 section .newproduct .productwrapper li:hover .seemore::after{
-background-color: #ae5761;
-width: 100%;
+    background-color: #ae5761;
+    width: 100%;
 }
 
-section .newproduct .productwrapper li .seemore2::after{
+section .newproduct .productwrapper li .seemore::after{
     content: '';
     display: block;
     border-bottom: 55px solid #ae5761;
@@ -499,7 +505,7 @@ section .newproduct .productwrapper li .seemore2::after{
 
 }
 
-section .newproduct .productwrapper li:hover .seemore2::after{
+section .newproduct .productwrapper li:hover .seemore::after{
 background-color: #ae5761;
 width: 100%;
 }
@@ -521,6 +527,8 @@ section .wheretobuy .shoptitle{
     /* background-color: #ae5761; */
 }
 
+
+
 section .wheretobuy .shoptitle::after{
     content: '';
     display: block;
@@ -534,6 +542,12 @@ section .wheretobuy .shoptitle::after{
 section .wheretobuy .shoptitle:hover::after{
 width: 100%;
 }
+
+section .wheretobuy .shoptitle a{
+    width: 100%;
+    height: 100%;
+    display: block;
+ }
 
 section .wheretobuy .shoptitle h1{
     font-size: 65px;
