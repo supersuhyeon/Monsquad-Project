@@ -531,7 +531,7 @@ section .youmay{
 height: 6vw;
 border-bottom: 5px solid #333;
 display: flex;
-position: relative;
+
 }
 
 .youmay .youmaytitle .ybigtitle{
@@ -541,27 +541,52 @@ border-right: 5px solid #333;
 box-sizing: border-box;
 }
 
-.youmay .youmaytitle .ybigtitle{}
+.youmay .youmaytitle .ybigtitle h1{
+    font-size: 50px;
+    font-weight: 800;
+    padding-top: 15px;
+    }
 
-.youmay .youmaytitle h1{
-font-size: 50px;
+.youmay .youmaytitle .leftbtn{
+    width: calc(100%/2);
+    display: flex;
+    
+}
+
+.youmay .youmaytitle .leftbtn .prevbtn{
+    width: calc(100%/2);
+    border-right: 5px solid #333;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.youmay .youmaytitle .leftbtn .nextbtn{
+    width: calc(100%/2);
+    position: relative;
+}
+
+
+.youmay .youmaytitle .leftbtn .swiper-button-next,
+.youmay .youmaytitle .leftbtn .swiper-button-prev{
+display: block;
+width: 100%;
+height: 100%;
+color: #333;
 font-weight: 800;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0;
 }
 
 .youmay .youmaytitle .swiper-button-next,
 .youmay .youmaytitle .swiper-button-prev{
-top: 50px;
-}
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-.youmay .youmaytitle .rightbtn{
-width: calc(100%/2/2);
-}
-.youmay .youmaytitle .swiper-button-next{
-right: 200px;
-}
-
-.youmay .youmaytitle .swiper-button-prev{
-left: 800px;
 }
 
 .youmay .youmaytitle span:last-child{
