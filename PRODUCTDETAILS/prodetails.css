@@ -455,12 +455,13 @@ section .prowrappers .rightbrief .sizedetails h1{
 section .prowrappers .rightbrief .sizedetails span{
     border: 3px solid #333;
     padding: 10px;
-    background-color: #ae5761;
+    /* background-color: #ae5761; */
     font-weight: 600;
  }
 
 section .prowrappers .rightbrief .sizedetails span:hover{
 color: #fff;
+background-color: #ae5761;
  }
 
 section .prowrappers .rightbrief .qtydetails{
@@ -530,6 +531,7 @@ section .youmay{
 height: 6vw;
 border-bottom: 5px solid #333;
 display: flex;
+position: relative;
 }
 
 .youmay .youmaytitle .ybigtitle{
@@ -539,45 +541,47 @@ border-right: 5px solid #333;
 box-sizing: border-box;
 }
 
+.youmay .youmaytitle .ybigtitle{}
+
 .youmay .youmaytitle h1{
 font-size: 50px;
 font-weight: 800;
 }
 
-.youmay .youmaytitle span{
-display: block;
+.youmay .youmaytitle .swiper-button-next,
+.youmay .youmaytitle .swiper-button-prev{
+top: 50px;
+}
+
+.youmay .youmaytitle .rightbtn{
 width: calc(100%/2/2);
-border-right: 5px solid #333;
-box-sizing: border-box;
+}
+.youmay .youmaytitle .swiper-button-next{
+right: 200px;
+}
+
+.youmay .youmaytitle .swiper-button-prev{
+left: 800px;
 }
 
 .youmay .youmaytitle span:last-child{
 border-right: 0;
 }
 
-.youmay .slide-wrapper{
+.youmay .swiper-wrapper{
     width: 100%;
     height: 600px;
-}
-
-.youmay .slide-wrapper .slides{
     display: flex;
 }
 
-.youmay .slide-wrapper .slides.animated{
-transition: 0.5s ease-out;
-}
-
-.youmay .slide-wrapper .slides li{
+.youmay .mySwiper .swiper-wrapper .swiper-slide{
 width: calc(100%/4);
 height: 600px;
 border-right: 5px solid #333;
 box-sizing: border-box;
-overflow: hidden;
 }
 
-.youmay .slide-wrapper .slides li:last-child{
-border-right: 0;
+.youmay .swiper-wrapper .swiper-slide:last-child{
 }
 
 /* FOOTER SECTION */

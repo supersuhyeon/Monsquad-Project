@@ -19,13 +19,13 @@ menuIcon.addEventListener('click', (e)=>{
     }
 })
 
-new Swiper('.mySwiper', {
+new Swiper('.menuimg .mySwiper', {
     loop:true,
     autoplay:{
         delay:5000
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".menuimg .swiper-pagination",
         // dynamicBullets: true,
         clickable: true
       },
@@ -150,3 +150,20 @@ function count(type)  {
   document.querySelector(".sizeguide").addEventListener("click", open);
   document.querySelector(".closebtn").addEventListener("click", close);
   document.querySelector(".bgoverlay").addEventListener("click", close);
+
+new Swiper(".youmay .mySwiper", {
+    slidesPerView : 4,
+    loop: true,
+    autoplay: {
+        delay: 5000
+    },
+    pagination: {
+      el: ".youmay .swiper-pagination",
+      clickable: true,
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".youmay .swiper-button-next",
+      prevEl: ".youmay .swiper-button-prev",
+    },
+  });
