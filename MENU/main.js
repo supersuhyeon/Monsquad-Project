@@ -94,7 +94,7 @@ floatingObject('.floatingbtn')
           autoHover: true,
           autoControls: false,
           controls: false,
-          pager: false,
+          pager: true,
       });
     });
 

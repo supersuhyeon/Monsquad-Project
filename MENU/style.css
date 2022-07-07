@@ -590,6 +590,24 @@ section .monsgoods .slider{
     width: 100%;
 }
 
+.bx-wrapper .bx-pager{
+    bottom: 10px !important;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a{
+    width: 77px !important;
+    height: 17px !important;
+    margin-right: 2px;
+    background: transparent !important;
+    outline: none;
+    border-radius: 0% !important;
+    border: 1px solid rgba(0,0,0,.3);
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active{
+background: black !important;
+}
+
 section .monsgoods .sloganarea{
     border-top: 5px solid #333;
     border-bottom: 5px solid #333;
