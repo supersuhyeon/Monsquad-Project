@@ -483,12 +483,13 @@ section .newnotice .noticetitle h1{
     }
 
     section .newnotice .noticetitle{
-        height: 10vh
+        height: 12vh;
     }
 
     section .newnotice .noticetitle h1{
         font-size: 30px;
-        padding-top: 20px;
+        height: 100%;
+        padding-top: 25px;
     }
 
 }
@@ -801,7 +802,7 @@ section .wheretobuy .shoptitle:hover h1{color: #fff;}
     section .wheretobuy .shoptitle h1{
         font-size: 30px;
         height: 100%;
-        padding-top: 15px;
+        padding-top: 25px;
 
 }
 
