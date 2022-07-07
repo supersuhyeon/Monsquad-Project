@@ -415,7 +415,7 @@ main .mainintro img:nth-child(8):hover{
 
 main .mainmobile img{
     display: none;
-    padding-top: 130px;
+    padding-top: 120px;
 }
 
 @keyframes tilt{
@@ -749,7 +749,7 @@ section .newproduct .productwrapper li:hover .seemore::after{
 }
 
 section .wheretobuy .wheretitle{
-    height: 10vh;
+    height: 12vh;
     border-bottom: 5px solid #333;
 }
 
@@ -760,7 +760,7 @@ section .wheretobuy .wheretitle h1{
 }
 
 section .wheretobuy .shoptitle{
-    height: 10vh;
+    height: 12vh;
     border-bottom: 5px solid #333;
     /* background-color: #ae5761; */
 }
@@ -770,7 +770,7 @@ section .wheretobuy .shoptitle{
 section .wheretobuy .shoptitle::after{
     content: '';
     display: block;
-    border-bottom: 90.5px solid #ae5761;
+    border-bottom: 94px solid #ae5761;
     margin-top: -83px;
     width: 0;
     transition: 0.8s;
