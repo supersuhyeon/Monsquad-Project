@@ -647,13 +647,6 @@ section .newproduct .productwrapper li:hover .seemore a{
         font-size: 22px;
     }
 
-    section .newproduct .productwrapper{
-        
-    }
-
-    section .newproduct .productwrapper li{
-        
-    }
 }
 
 section .newproduct .productwrapper li .seemore::after{
@@ -742,6 +735,7 @@ section .wheretobuy .shoptitle:hover h1{color: #fff;}
         padding-top: 15px;
 
 }
+}
 
 section .wheretobuy .addresswrapper{
     display: flex;
@@ -752,7 +746,7 @@ section .wheretobuy .addresswrapper{
 
 section .wheretobuy .addresswrapper .kraddress,
 section .wheretobuy .addresswrapper .laaddress{
-    width: calc(100%/2);
+    width: calc(85vw/2);
     height: 100%;
     border-right: 5px solid #333;
     padding: 10px 0 0 20px;
@@ -775,11 +769,6 @@ section .wheretobuy .addresswrapper .kraddress p,
 section .wheretobuy .addresswrapper .laaddress p{
     font-size: 20px;
 }
-
-section .wheretobuy .addresswrapper{
-    height: 200px;
-}
-
 }
 
 section .monsgoods .slider{
@@ -824,11 +813,9 @@ section .monsgoods .bx-wrapper{
 }
 
 @media (max-width: 768px){
-
     section .monsgoods .sloganarea h1{
         font-size: 30px;
     }
-
 }
 
 /* FOOTER SECTION */
