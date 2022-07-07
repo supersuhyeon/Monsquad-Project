@@ -19,6 +19,14 @@ menuIcon.addEventListener('click', (e)=>{
     }
 })
 
+const mobileIcon = document.querySelector('.menuicon-mobile')
+const mobileDrop = document.querySelector('.dropmenu-mobile')
+
+mobileIcon.addEventListener('click', (e)=>{
+    mobileDrop.classList.toggle('active')
+})
+
+
 new Swiper('.mySwiper', {
     loop:true,
     autoplay:{
@@ -37,7 +45,7 @@ new Swiper('.mySwiper', {
 
 const badgeEl = document.querySelector('header .badges')
 
-window.addEventListener('scroll', _.throttle(function(){
+const removeEvent = window.addEventListener('scroll', _.throttle(function(){
     console.log(window.scrollY)
     if(window.scrollY > 500){
         //hide
@@ -64,6 +72,7 @@ window.addEventListener('scroll', _.throttle(function(){
         })
     }
 },300)) //0.3s 단위로 함수 제어
+
 
 const goTopEl = document.querySelector('#go-top')
 goTopEl.addEventListener('click', (e)=>{

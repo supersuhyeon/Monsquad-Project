@@ -174,6 +174,73 @@ margin-right: 0;
 background-image: url("./menu_img/bullet-on.png");
 }
 
+.menuicon-mobile{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: none;
+
+}
+
+.menuicon-mobile .material-icons{
+font-size: 50px;
+}
+
+.dropmenu-mobile{
+  margin-top: 15vh;
+  height: 100%;
+  position: fixed;
+  width: 100vw;
+  z-index: 80;
+  background-color:#353537;
+  /* transform: translate(0, -100vh); */
+  transition: transform 0.8s ease;
+  display: none;
+}
+
+.dropmenu-mobile .dropdown-mobile li a{
+    color: #fff;
+}
+
+
+@media (max-width: 768px){
+    .rightmenubar{
+        display: none;
+    }
+
+    .leftmenubar{
+        display: none;
+    }
+
+    .marginspace{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .home_logo.mobile{
+        position: fixed;
+        z-index: 99;
+        height: 15vh;
+        background-color: #fff;
+    }
+
+    .menuicon-mobile{
+        display: block;
+        z-index: 99;
+        position: fixed;
+    }
+
+    .dropmenu-mobile{
+        display: none;
+    }
+
+    .dropmenu-mobile.active{
+        display: block;
+        z-index: 90;
+    }
+}
+
+
 /* HEADER SECTION */
 
 header{
@@ -213,6 +280,13 @@ header .badges .badge{
     margin-bottom: 12px;
     box-shadow: 4px 4px 10px rgba(0,0,0,.15);
     cursor: pointer;
+
+}
+
+@media (max-width: 768px){
+    header .badges{
+        transform: translateX(200px);
+    }
 
 }
 
@@ -315,6 +389,10 @@ main .mainintro img:nth-child(8):hover{
     animation: tilt 1s infinite alternate;
 }
 
+main .mainmobile{
+    display: none;
+}
+
 @keyframes tilt{
     from{transform: rotate(0);}
     30%{transform: rotate(-30deg);}
@@ -337,6 +415,20 @@ main .mainintro img:nth-child(8):hover{
     from{transform: translateX(0) ;}
     50%{transform: translateX(30px);}
     to{transform: translateX(60px)}
+}
+
+
+@media (max-width: 768px){
+    .mainintro img{
+        display: none;
+    }
+
+    main .mainmobile{
+        display: block;
+        width: 768px;
+        height: 550px;
+        background: url('/HOME/home_img/mobile.intro.png');
+    }
 }
 
 /* SECTION */
