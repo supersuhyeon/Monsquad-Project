@@ -114,11 +114,16 @@ a{
 }
 .bottommenu .menutext ul li{
     border-bottom: 5px solid #333;
-    height: calc(92vw/13);
+    height: 100%;
     padding: 15px 20px;
     font-size: 65px;
     font-weight: 800;
     box-sizing: border-box;
+}
+
+.bottommenu .menutext ul li:nth-child(1),
+.bottommenu .menutext ul li:nth-child(6){
+    height: 100px;
 }
 
 .bottommenu .menutext ul li:nth-child(2):hover,
@@ -146,8 +151,8 @@ border-top: 0;
 }
 
 .swiper-slide img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .menuimg .swiper-pagination{
@@ -192,15 +197,34 @@ font-size: 50px;
   position: fixed;
   width: 100vw;
   z-index: 80;
-  background-color:#353537;
-  /* transform: translate(0, -100vh); */
+  background-color: #fff;
   transition: transform 0.8s ease;
   display: none;
 }
 
-.dropmenu-mobile .dropdown-mobile li a{
-    color: #fff;
+.dropmenu-mobile li{
+    border-bottom: 5px solid #333;
 }
+
+.dropmenu-mobile li:hover{
+   background-color: #ae5761;
+}
+
+.dropmenu-mobile .dropdown-mobile li:hover a{
+color: #fff;
+}
+
+.dropmenu-mobile .dropdown-mobile li a{
+    color: #333;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.dropmenu-mobile .dropdown-mobile li a{
+padding: 53px;
+}
+
 
 
 @media (max-width: 768px){
@@ -250,7 +274,7 @@ header{
 
 header .home_logo{
     width: 100%;
-    height: 8vw;
+    height: 15vh;
     position: relative;
     border-bottom: 5px solid #333;
 }
@@ -389,8 +413,9 @@ main .mainintro img:nth-child(8):hover{
     animation: tilt 1s infinite alternate;
 }
 
-main .mainmobile{
+main .mainmobile img{
     display: none;
+    padding-top: 130px;
 }
 
 @keyframes tilt{
@@ -423,13 +448,13 @@ main .mainmobile{
         display: none;
     }
 
-    main .mainmobile{
+    main{
+        height: 100%;
+    }
+
+    main .mainmobile img{
         display: block;
-        width: 768px;
-        height: 550px;
-        background: url('/HOME/home_img/mobile.intro.png');
-        background-repeat: no-repeat;
-        background-position-y: 150px;
+        max-width: 100%;
     }
 }
 
@@ -569,30 +594,25 @@ section .newnotice .noticebrief p{
 section .newproduct .productwrapper{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
 }
 
 section .newproduct .productwrapper li{
-    width: calc(85vw/4)-20px;
+    width: calc(100%/4);
     border-bottom: 5px solid #333;
     border-right: 5px solid #333;
     position: relative;
     padding-top: 20px;
-    flex-grow: 1;
-    flex-basis: content;
 
 }
-
-section .newproduct .productwrapper li .complete,
-section .newproduct .productwrapper li .decks{
-    padding-left: 25%;
-    
+section .newproduct .productwrapper li img{
+    margin: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 section .newproduct .productwrapper li .wheels,
 section .newproduct .productwrapper li .trucks{
-    padding-left: 10%;
-    
+ min-height: 400px;
 }
 
 section .newproduct .productwrapper li:last-child{
@@ -635,18 +655,51 @@ section .newproduct .productwrapper li:hover .seemore a{
 }
 
 @media (max-width: 768px){
-    
-    section .newproduct .productwrapper li .seemore a{
-        font-size: 20px;
-        height: 25px;
-    }
-    section .newproduct .productwrapper li .producttext p{
-        font-size: 10px;
-    }
-    section .newproduct .productwrapper li .producttext h1{
-        font-size: 22px;
+
+
+    section .newproduct .productwrapper{
+        flex-wrap: wrap;
     }
 
+    section .newproduct .productwrapper li{
+        width: calc(768px/4);
+        height: 550px;
+        border-bottom: 5px solid #333;
+        border-right: 5px solid #333;
+        position: relative;
+        padding-top: 20px;
+        flex-grow: 1;
+    }
+
+    section .newproduct .productwrapper li:hover .seemore a{
+        background-color: #ae5761;
+        color: #fff;
+    }
+
+    section .newproduct .productwrapper li img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    section .newproduct .productwrapper li:nth-child(2),
+    section .newproduct .productwrapper li:nth-child(4){
+        flex-shrink: 0;
+        width: 200px;
+    }
+    
+    section .newproduct .productwrapper li .seemore a{
+        font-size: 25px;
+        height: 50px;
+    }
+    section .newproduct .productwrapper li .producttext p{
+        font-size: 15px;
+    }
+    section .newproduct .productwrapper li .producttext h1{
+        font-size: 25px;
+    }
+    section .newproduct .productwrapper li:last-child{
+        border-right: 5px solid #333;
+    }
 }
 
 section .newproduct .productwrapper li .seemore::after{
@@ -675,8 +728,24 @@ section .newproduct .productwrapper li .seemore::after{
 }
 
 section .newproduct .productwrapper li:hover .seemore::after{
-background-color: #ae5761;
-width: 100%;
+    background-color: #ae5761;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+
+    section .newproduct .productwrapper li .seemore::after{
+        display: none;
+    }
+    section .newproduct .productwrapper li:hover .seemore::after{
+        display: none;
+    }
+    section .newproduct .productwrapper li .seemore::after{
+        display: none;
+    }
+    section .newproduct .productwrapper li:hover .seemore::after{
+        display: none;
+    }
 }
 
 section .wheretobuy .wheretitle{
@@ -731,10 +800,23 @@ section .wheretobuy .shoptitle:hover h1{color: #fff;}
     section .wheretobuy .wheretitle h1,
     section .wheretobuy .shoptitle h1{
         font-size: 30px;
-        height: 5vh;
+        height: 100%;
         padding-top: 15px;
 
 }
+
+section .wheretobuy .shoptitle::after{
+    display: none;
+}
+
+section .wheretobuy .shoptitle:hover::after{
+    display: none;
+    }
+
+section .wheretobuy .shoptitle:hover h1{color: white;}
+
+section .wheretobuy .shoptitle:hover{background-color: #ae5761;}
+
 }
 
 section .wheretobuy .addresswrapper{
