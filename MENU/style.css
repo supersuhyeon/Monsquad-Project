@@ -428,6 +428,8 @@ main .mainmobile{
         width: 768px;
         height: 550px;
         background: url('/HOME/home_img/mobile.intro.png');
+        background-repeat: no-repeat;
+        background-position-y: 150px;
     }
 }
 
@@ -438,7 +440,7 @@ section .newnotice{
 }
 
 section .newnotice .noticetitle{
-    height: 6vw;
+    height: 12vh;
     border-bottom: 5px solid #333;
     transition: .3s;
 }
@@ -449,6 +451,22 @@ section .newnotice .noticetitle h1{
     padding-top: 5px;
 }
 
+@media (max-width: 768px){
+
+    .marginguide{
+        margin-left: 10px;
+    }
+
+    section .newnotice .noticetitle{
+        height: 10vh
+    }
+
+    section .newnotice .noticetitle h1{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
+}
 
 section .newnotice .noticevideo{
     height: 700px;
@@ -484,6 +502,28 @@ section .newnotice .noticevideo .youtube_cover{
     height: 100%;
 }
 
+@media (max-width: 768px){
+    
+    section .newnotice .noticevideo{
+        height: 200px;
+    }
+    section .newnotice .noticevideo .youtube_area{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin-top: 0;
+    }
+
+    section .newnotice .noticevideo .youtube_area::before{
+        width: 0;
+        padding-top: 0;
+    }
+
+}
+
 #player{
     width: 100%;
     height: 100%;
@@ -510,32 +550,52 @@ section .newnotice .noticebrief p{
     font-weight: 800;
 }
 
+
+@media (max-width: 768px){
+    
+    section .noticevideo .floatingbtn img{
+        width: 70px;
+        height: 70px;
+    }
+
+    section .newnotice .noticebrief p{
+        font-size: 20px;
+        
+    }
+
+}
+
+
 section .newproduct .productwrapper{
     width: 100%;
-    height: 580px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 section .newproduct .productwrapper li{
-    width: calc(100%/4);
+    width: calc(100%/4) -20px ;
     border-bottom: 5px solid #333;
     border-right: 5px solid #333;
     position: relative;
     padding-top: 20px;
+    flex-grow: 1;
 }
 
-section .newproduct .productwrapper li .complete,
+/* section .newproduct .productwrapper li .complete,
 section .newproduct .productwrapper li .decks{
     padding-left: 25%;
+    
 }
 
 section .newproduct .productwrapper li .wheels,
 section .newproduct .productwrapper li .trucks{
     padding-left: 10%;
-}
+    
+} */
 
 section .newproduct .productwrapper li:last-child{
     border-right: none;
+   
 }
 
 section .newproduct .productwrapper li .producttext p{
@@ -572,6 +632,28 @@ section .newproduct .productwrapper li:hover .seemore a{
     color: #fff;
 }
 
+@media (max-width: 768px){
+    
+    section .newproduct .productwrapper li .seemore a{
+        font-size: 20px;
+        height: 25px;
+    }
+    section .newproduct .productwrapper li .producttext p{
+        font-size: 10px;
+    }
+    section .newproduct .productwrapper li .producttext h1{
+        font-size: 22px;
+    }
+
+    section .newproduct .productwrapper{
+        
+    }
+
+    section .newproduct .productwrapper li{
+        
+    }
+}
+
 section .newproduct .productwrapper li .seemore::after{
     content: '';
     display: block;
@@ -603,7 +685,7 @@ width: 100%;
 }
 
 section .wheretobuy .wheretitle{
-    height: 6vw;
+    height: 10vh;
     border-bottom: 5px solid #333;
 }
 
@@ -614,7 +696,7 @@ section .wheretobuy .wheretitle h1{
 }
 
 section .wheretobuy .shoptitle{
-    height: 6vw;
+    height: 10vh;
     border-bottom: 5px solid #333;
     /* background-color: #ae5761; */
 }
@@ -645,11 +727,19 @@ section .wheretobuy .shoptitle h1{
     font-size: 65px;
     font-weight: 800;
     padding-top: 5px;
-    transition: 0.4s;
     
 }
 
 section .wheretobuy .shoptitle:hover h1{color: #fff;}
+
+@media (max-width: 768px){
+    section .wheretobuy .wheretitle h1,
+    section .wheretobuy .shoptitle h1{
+        font-size: 30px;
+        height: 5vh;
+        padding-top: 15px;
+
+}
 
 section .wheretobuy .addresswrapper{
     display: flex;
@@ -678,6 +768,18 @@ section .wheretobuy .addresswrapper .laaddress p{
 
 }
 
+@media (max-width: 768px){
+section .wheretobuy .addresswrapper .kraddress p,
+section .wheretobuy .addresswrapper .laaddress p{
+    font-size: 20px;
+}
+
+section .wheretobuy .addresswrapper{
+    height: 200px;
+}
+
+}
+
 section .monsgoods .slider{
     width: 100%;
 }
@@ -703,7 +805,7 @@ background: black !important;
 section .monsgoods .sloganarea{
     border-top: 5px solid #333;
     border-bottom: 5px solid #333;
-    height: 6vw;
+    height: 12vh;
     background-color: #ae5761;
 }
 
@@ -719,6 +821,14 @@ section .monsgoods .bx-wrapper{
     margin-bottom: 0;
 }
 
+@media (max-width: 768px){
+
+    section .monsgoods .sloganarea h1{
+        font-size: 30px;
+    }
+
+}
+
 /* FOOTER SECTION */
 
 
@@ -728,8 +838,8 @@ footer .flogo{
 
 footer .fmenu{
     display: flex;
+    flex-wrap: wrap;
 }
-
 footer .fmenu li+li{
     margin-left: 15px;
 }
