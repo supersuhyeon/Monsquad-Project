@@ -489,10 +489,12 @@ section .newnotice .noticetitle h1{
     section .newnotice .noticetitle{
         height: 100%;
         padding: 10px 0 10px;
+        
     }
 
     section .newnotice .noticetitle h1{
-        font-size: 30px;       
+        font-size: 30px;  
+        overflow: hidden;     
     }
 
 }
@@ -589,6 +591,7 @@ section .newnotice .noticebrief p{
 
     section .newnotice .noticebrief p{
         font-size: 20px;
+        overflow: hidden;
         
     }
 
@@ -641,12 +644,11 @@ section .newproduct .productwrapper li .producttext h1{
 
 section .newproduct .productwrapper li .seemore{
     border-top: 5px solid #333;
-    /* height: 50px; */
     text-align: center;
     font-size: 25px;
     font-weight: 800;
     transition: 0.2s;
-    /* padding-top: 8px; */
+    padding-top: 10px;
     box-sizing: border-box;
 }
 
@@ -662,7 +664,7 @@ section .newproduct .productwrapper li:hover .seemore{
         border-bottom: 5px solid #333;
     }
 
-    section .newproduct .productwrapper li:hover .seemore a{
+    section .newproduct .productwrapper li:hover .seemore{
         background-color: #ae5761;
         color: #fff;
     }
@@ -678,38 +680,25 @@ section .newproduct .productwrapper li:hover .seemore{
         border-right: 0;
     }
 
-    section .newproduct .productwrapper li .seemore a{
+    section .newproduct .productwrapper li .seemore{
+        min-height: 100%;
+        overflow: hidden;
+        padding: 10px;
         font-size: 100%;
         height: 100%;
     }
-    section .newproduct .productwrapper li .producttext p{
-        font-size: 100%;
-    }
+
     section .newproduct .productwrapper li .producttext h1{
         font-size: 100%;
+        overflow: hidden;
     }
 }
 
 section .newproduct .productwrapper li .seemore::after{
     content: '';
     display: block;
-    border-bottom: 55px solid #ae5761;
-    margin-top: -20px;
-    width: 0;
-    transition: 0.2s;
-
-}
-
-section .newproduct .productwrapper li:hover .seemore::after{
-    background-color: #ae5761;
-    width: 100%;
-}
-
-section .newproduct .productwrapper li .seemore::after{
-    content: '';
-    display: block;
-    border-bottom: 55px solid #ae5761;
-    margin-top: 10px;
+    border-bottom: 52px solid #ae5761;
+    margin-top: -40px;
     width: 0;
     transition: 0.2s;
 
@@ -785,6 +774,12 @@ section .wheretobuy .shoptitle h1{
 section .wheretobuy .shoptitle:hover h1{color: #fff;}
 
 @media (max-width: 768px){
+
+    section .wheretobuy .wheretitle,
+    section .wheretobuy .shoptitle{
+        overflow: hidden;
+    }
+
     section .wheretobuy .wheretitle h1,
     section .wheretobuy .shoptitle h1{
         font-size: 30px;
@@ -839,6 +834,7 @@ section .wheretobuy .addresswrapper .kraddress p,
 section .wheretobuy .addresswrapper .laaddress p{
     font-size: 20px;
     padding-right: 20px;
+    overflow: hidden;
 }
 
 section .wheretobuy .addresswrapper{

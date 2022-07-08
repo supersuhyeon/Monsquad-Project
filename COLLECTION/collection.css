@@ -423,20 +423,19 @@ text-align: center;
 .collecproducts .collecwrapper li .seemore{
 border-top: 5px solid #333;
 border-bottom: 5px solid #333;
-/* height: 50px; */
 text-align: center;
 font-size: 25px;
 font-weight: 800;
 transition: 0.2s;
-/* padding-top: 8px; */
+padding-top: 10px;
 box-sizing: border-box;
 }
 
 .collecproducts .collecwrapper li .seemore::after{
     content: '';
     display: block;
-    border-bottom: 45px solid #ae5761;
-    margin-top: -38px;
+    border-bottom: 48px solid #ae5761;
+    margin-top: -40px;
     width: 0;
     transition: 0.2s;
 }
