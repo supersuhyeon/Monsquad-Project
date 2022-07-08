@@ -369,6 +369,7 @@ margin-right: 0;
         font-size: 30px;
         height: 100%;
         padding-top: 25px;
+        overflow-y: hidden;
     }
 
     .aboutintro .aboutbrief h2{
@@ -391,6 +392,10 @@ margin-right: 0;
     .mobilestoreimg img{
         height: 300px;
         min-width: 100%;
+    }
+
+    * {
+        overflow-x: hidden;
     }
 
 }
