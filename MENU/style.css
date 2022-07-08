@@ -216,13 +216,13 @@ color: #fff;
 
 .dropmenu-mobile .dropdown-mobile li a{
     color: #333;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
     text-align: center;
 }
 
 .dropmenu-mobile .dropdown-mobile li a{
-padding: 53px;
+    padding: 51px;
 }
 
 
@@ -483,13 +483,12 @@ section .newnotice .noticetitle h1{
     }
 
     section .newnotice .noticetitle{
-        height: 12vh;
+        height: 100%;
+        padding: 10px 0 10px;
     }
 
     section .newnotice .noticetitle h1{
-        font-size: 30px;
-        height: 100%;
-        padding-top: 25px;
+        font-size: 30px;       
     }
 
 }
@@ -682,12 +681,16 @@ section .newproduct .productwrapper li:hover .seemore a{
         height: auto;
     }
 
+    section .newproduct .productwrapper li:last-child{
+        border-right: 5px solid #333;
+    }
+
     section .newproduct .productwrapper li:nth-child(2),
     section .newproduct .productwrapper li:nth-child(4){
         flex-shrink: 0;
         width: 200px;
     }
-    
+
     section .newproduct .productwrapper li .seemore a{
         font-size: 25px;
         height: 50px;
@@ -697,9 +700,6 @@ section .newproduct .productwrapper li:hover .seemore a{
     }
     section .newproduct .productwrapper li .producttext h1{
         font-size: 25px;
-    }
-    section .newproduct .productwrapper li:last-child{
-        border-right: 5px solid #333;
     }
 }
 
@@ -853,8 +853,9 @@ section .wheretobuy .addresswrapper .laaddress p{
     font-size: 20px;
     padding-right: 20px;
 }
+
 section .wheretobuy .addresswrapper{
-    height: 200px;
+    height: 210px;
 }
 }
 
@@ -900,8 +901,25 @@ section .monsgoods .bx-wrapper{
 }
 
 @media (max-width: 768px){
+
+    section .monsgoods .sloganarea{
+        height: 100%;
+    }
+
     section .monsgoods .sloganarea h1{
-        font-size: 30px;
+        font-size: 28px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a{
+        width: 50px !important;
+        height: 10px !important;
+        margin-right: 2px;
+        background: transparent !important;
+        outline: none;
+        border-radius: 0% !important;
+        border: 1px solid rgba(0,0,0,.3);
     }
 }
 
@@ -952,7 +970,14 @@ footer p{
 }
 
 @media (max-width: 768px){
+
+    footer .fmenu li a{
+        overflow: hidden;
+        font-size: 15px;
+    }
+
     footer p{
         padding: 10px 0;
+        font-size: 10px;
     }
 }

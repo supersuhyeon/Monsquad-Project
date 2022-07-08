@@ -215,13 +215,13 @@ color: #fff;
 
 .dropmenu-mobile .dropdown-mobile li a{
     color: #333;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
     text-align: center;
 }
 
 .dropmenu-mobile .dropdown-mobile li a{
-padding: 53px;
+padding: 51px;
 }
 
 
@@ -365,19 +365,25 @@ margin-right: 0;
         margin: 0 20px 0;
     }
 
+    .aboutintro .abouttitle{
+        overflow: hidden;
+    }
+
     .aboutintro .abouttitle h1{
         font-size: 30px;
         height: 100%;
         padding-top: 25px;
-        overflow-y: hidden;
+       
     }
 
     .aboutintro .aboutbrief h2{
         font-size: 25px;
+        overflow: hidden;
     }
 
     .aboutintro .aboutbrief p{
         font-size: 25px;
+        overflow: hidden;
     }
 
     .aboutintro .aboutbrief .aboutstickers .sticker {
@@ -451,10 +457,12 @@ section .aboutcolor .colortitle h1{
         font-size: 30px;
         font-weight: 800;
         padding-top: 25px;
+        overflow: hidden;
     }
 
     section .aboutlogo .logobrief p{
         font-size: 25px;
+        overflow: hidden;
     }
 
     section .aboutlogo .logobrief img{
@@ -588,6 +596,7 @@ color: #333;
     section .aboutcolor .colorwrapper .colordetails span p{
         font-size: 25px;
         padding: 0;
+        overflow: hidden;
     }
 
     section .aboutcolor .colorwrapper .onecolor{
@@ -627,6 +636,7 @@ section .aboutcolor .colordiverse .btmcolor div{
 section .aboutcolor .colordiverse p{
     font-size: 20px;
     padding: 0;
+    overflow: hidden;
 }
 
 
@@ -682,7 +692,14 @@ footer p{
 }
 
 @media (max-width: 768px){
+
+    footer .fmenu li a{
+        overflow: hidden;
+        font-size: 15px;
+    }
+
     footer p{
         padding: 10px 0;
+        font-size: 10px;
     }
 }
