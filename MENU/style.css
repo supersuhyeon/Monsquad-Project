@@ -266,6 +266,10 @@ color: #fff;
     *{
         overflow-x: hidden;
     }
+
+    .marginguide{
+        margin: 0 20px 0;
+    }
 }
 
 
@@ -747,7 +751,7 @@ section .wheretobuy .shoptitle{
 section .wheretobuy .shoptitle::after{
     content: '';
     display: block;
-    border-bottom: 94px solid #ae5761;
+    border-bottom: 100px solid #ae5761;
     margin-top: -83px;
     width: 0;
     transition: 0.8s;

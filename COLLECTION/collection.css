@@ -261,6 +261,10 @@ padding: 51px;
         display: block;
         z-index: 90;
     }
+
+    .marginguide{
+        margin: 0 20px 0;
+    }
 }
 
 
@@ -338,6 +342,15 @@ header .home_logo img{
     display: block;
   }
 
+  #tab-2:checked ~ .content div:nth-child(2),
+  #tab-3:checked ~ .content div:nth-child(3),
+  #tab-4:checked ~ .content div:nth-child(4){
+    border-bottom: 5px solid #333;
+    min-height: 200px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .collecmenu {
     margin: 0 auto;
     width: 85vw;
@@ -376,9 +389,9 @@ header .home_logo img{
   .content-dis:nth-child(4){
     font-size: 30px;
     font-weight: 800;
-    padding-top: 20px;
     text-transform: uppercase;
-    
+    box-sizing: border-box;
+    padding: 20px;
   }
 
 .collecproducts .collecwrapper{
