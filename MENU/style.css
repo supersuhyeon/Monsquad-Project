@@ -479,7 +479,7 @@ section .newnotice .noticetitle h1{
 @media (max-width: 768px){
 
     .marginguide{
-        margin-left: 10px;
+        margin: 0 20px 0;
     }
 
     section .newnotice .noticetitle{
@@ -851,6 +851,7 @@ section .wheretobuy .addresswrapper .laaddress p{
 section .wheretobuy .addresswrapper .kraddress p,
 section .wheretobuy .addresswrapper .laaddress p{
     font-size: 20px;
+    padding-right: 20px;
 }
 section .wheretobuy .addresswrapper{
     height: 200px;
@@ -948,4 +949,10 @@ footer p{
     bottom: 30px;
     right: 30px;
     z-index: 81;
+}
+
+@media (max-width: 768px){
+    footer p{
+        padding: 10px 0;
+    }
 }

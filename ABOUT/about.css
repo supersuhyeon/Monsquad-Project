@@ -362,7 +362,7 @@ margin-right: 0;
 
     }
     .marginguide{
-        margin-left: 10px;
+        margin: 0 20px 0;
     }
 
     .aboutintro .abouttitle h1{
@@ -372,7 +372,7 @@ margin-right: 0;
     }
 
     .aboutintro .aboutbrief h2{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .aboutintro .aboutbrief p{
@@ -385,6 +385,7 @@ margin-right: 0;
 
     .mobilestoreimg{
         display: block;
+        margin-top: 30px;
     }
 
     .mobilestoreimg img{
@@ -576,11 +577,11 @@ color: #333;
         border-bottom: 5px solid #333;
         display: flex;
         align-items: center;
-        padding-left: 10px;
+        padding-left: 20px;
     
     }
     section .aboutcolor .colorwrapper .colordetails span p{
-        font-size: 20px;
+        font-size: 25px;
         padding: 0;
     }
 
@@ -654,7 +655,7 @@ footer .fmenu li a{
 }
 
 footer p{
-    margin: 10px 0 20px 0;
+    margin: 10px 0 20px 20px;
     font-weight: 600;
 }
 
@@ -673,4 +674,10 @@ footer p{
     bottom: 30px;
     right: 30px;
     z-index: 81;
+}
+
+@media (max-width: 768px){
+    footer p{
+        padding: 10px 0;
+    }
 }
