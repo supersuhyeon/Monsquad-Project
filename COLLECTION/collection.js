@@ -19,6 +19,13 @@ menuIcon.addEventListener('click', (e)=>{
     }
 })
 
+const mobileIcon = document.querySelector('.menuicon-mobile')
+const mobileDrop = document.querySelector('.dropmenu-mobile')
+
+mobileIcon.addEventListener('click', (e)=>{
+    mobileDrop.classList.toggle('active')
+})
+
 new Swiper('.mySwiper', {
     loop:true,
     autoplay:{

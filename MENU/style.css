@@ -82,14 +82,14 @@ a{
 
 .rightmenubar .toplogo{
     width: 100%;
-    height: 8vw;
+    height: 15vh;
     /* background-color: blueviolet; */
     position: relative;
     border-bottom: 5px solid #333;
 }
 
 .rightmenubar .bottommenu{
-    height: 92vw;
+    height: 92vh;
 }
 
 .rightmenubar .toplogo img{
@@ -261,6 +261,10 @@ color: #fff;
     .dropmenu-mobile.active{
         display: block;
         z-index: 90;
+    }
+
+    *{
+        overflow-x: hidden;
     }
 }
 
@@ -591,84 +595,71 @@ section .newnotice .noticebrief p{
 }
 
 
+section .newproduct{
+    margin: 0 auto;
+    width: 100%;
+}
+
 section .newproduct .productwrapper{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 section .newproduct .productwrapper li{
     width: calc(100%/4);
+    height: 100%;
     border-bottom: 5px solid #333;
     border-right: 5px solid #333;
-    position: relative;
-    padding-top: 20px;
+    box-sizing: border-box;
 
-}
-section .newproduct .productwrapper li img{
-    margin: auto;
-    max-width: 100%;
-    height: auto;
-}
-
-section .newproduct .productwrapper li .wheels,
-section .newproduct .productwrapper li .trucks{
- min-height: 400px;
 }
 
 section .newproduct .productwrapper li:last-child{
-    border-right: none;
-   
+border-right: 0;    
 }
 
-section .newproduct .productwrapper li .producttext p{
-    margin-top: 30px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
+section .newproduct .productwrapper li>a{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+section .newproduct .productwrapper li img{
+    margin: auto;
+}
+
+section .newproduct .productwrapper li .producttext{
+    padding: 20px;
 }
 
 section .newproduct .productwrapper li .producttext h1{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 800;
     text-align: center;
 }
 
-section .newproduct .productwrapper li .seemore a{
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    color: #333;
-    font-weight: 800;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+section .newproduct .productwrapper li .seemore{
     border-top: 5px solid #333;
+    /* height: 50px; */
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
     transition: 0.2s;
+    /* padding-top: 8px; */
+    box-sizing: border-box;
 }
 
-section .newproduct .productwrapper li:hover .seemore a{
+section .newproduct .productwrapper li:hover .seemore{
     color: #fff;
 }
 
 @media (max-width: 768px){
 
-
-    section .newproduct .productwrapper{
-        flex-wrap: wrap;
-    }
-
     section .newproduct .productwrapper li{
-        width: calc(768px/4);
-        height: 550px;
+        min-width: calc(100%/2);
+        height: 100%;
         border-bottom: 5px solid #333;
-        border-right: 5px solid #333;
-        position: relative;
-        padding-top: 20px;
-        flex-grow: 1;
     }
 
     section .newproduct .productwrapper li:hover .seemore a{
@@ -677,29 +668,25 @@ section .newproduct .productwrapper li:hover .seemore a{
     }
 
     section .newproduct .productwrapper li img{
-        max-width: 100%;
+        width: 50px;
         height: auto;
-    }
-
-    section .newproduct .productwrapper li:last-child{
-        border-right: 5px solid #333;
+        padding-top: 20px;
     }
 
     section .newproduct .productwrapper li:nth-child(2),
     section .newproduct .productwrapper li:nth-child(4){
-        flex-shrink: 0;
-        width: 200px;
+        border-right: 0;
     }
 
     section .newproduct .productwrapper li .seemore a{
-        font-size: 25px;
-        height: 50px;
+        font-size: 100%;
+        height: 100%;
     }
     section .newproduct .productwrapper li .producttext p{
-        font-size: 15px;
+        font-size: 100%;
     }
     section .newproduct .productwrapper li .producttext h1{
-        font-size: 25px;
+        font-size: 100%;
     }
 }
 
