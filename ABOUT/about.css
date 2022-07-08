@@ -1,6 +1,5 @@
 /* COMMON */
 
-
 body{
     font-family: 'Open Sans', sans-serif;
     color: #333;
@@ -114,11 +113,16 @@ a{
 }
 .bottommenu .menutext ul li{
     border-bottom: 5px solid #333;
-    height: calc(92vw/13);
+    height: 100%;
     padding: 15px 20px;
     font-size: 65px;
     font-weight: 800;
     box-sizing: border-box;
+}
+
+.bottommenu .menutext ul li:nth-child(1),
+.bottommenu .menutext ul li:nth-child(6){
+    height: 100px;
 }
 
 .bottommenu .menutext ul li:nth-child(2):hover,
@@ -146,8 +150,8 @@ border-top: 0;
 }
 
 .swiper-slide img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .menuimg .swiper-pagination{
@@ -174,7 +178,94 @@ margin-right: 0;
 background-image: url("/MENU/menu_img/bullet-on.png");
 }
 
+.menuicon-mobile{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: none;
+
+}
+
+.menuicon-mobile .material-icons{
+font-size: 50px;
+}
+
+.dropmenu-mobile{
+  margin-top: 15vh;
+  height: 100%;
+  position: fixed;
+  width: 100vw;
+  z-index: 80;
+  background-color: #fff;
+  transition: transform 0.8s ease;
+  display: none;
+}
+
+.dropmenu-mobile li{
+    border-bottom: 5px solid #333;
+}
+
+.dropmenu-mobile li:hover{
+   background-color: #ae5761;
+}
+
+.dropmenu-mobile .dropdown-mobile li:hover a{
+color: #fff;
+}
+
+.dropmenu-mobile .dropdown-mobile li a{
+    color: #333;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.dropmenu-mobile .dropdown-mobile li a{
+padding: 53px;
+}
+
+
+
+@media (max-width: 768px){
+    .rightmenubar{
+        display: none;
+    }
+
+    .leftmenubar{
+        display: none;
+    }
+
+    .marginspace{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .home_logo.mobile{
+        position: fixed;
+        z-index: 99;
+        height: 15vh;
+        background-color: #fff;
+    }
+
+    .menuicon-mobile{
+        display: block;
+        z-index: 99;
+        position: fixed;
+    }
+
+    .dropmenu-mobile{
+        display: none;
+    }
+
+    .dropmenu-mobile.active{
+        display: block;
+        z-index: 90;
+    }
+}
+
+
 /* HEADER SECTION */
+
 header{
     /* width: 100%; */
     position: relative;
@@ -182,7 +273,7 @@ header{
 
 header .home_logo{
     width: 100%;
-    height: 8vw;
+    height: 15vh;
     position: relative;
     border-bottom: 5px solid #333;
 }
@@ -198,7 +289,6 @@ header .home_logo img{
     cursor: pointer;
 }
 
-
 /* ABOUT SECTION */
 
 .aboutintro{
@@ -206,7 +296,7 @@ border-bottom: 5px solid #333;
 }
 
 .aboutintro .abouttitle{
-    height: 6vw;
+    height: 12vh;
     border-bottom: 5px solid #333;
     /* background-color: #ae5761; */
 }
@@ -215,10 +305,6 @@ border-bottom: 5px solid #333;
     font-size: 65px;
     font-weight: 800;
     padding-top: 5px;
-}
-
-.aboutintro .aboutbrief{
-
 }
 
 .aboutintro .aboutbrief h2{
@@ -232,6 +318,10 @@ border-bottom: 5px solid #333;
     justify-content: center;
     margin: 20px 0 20px;
 
+}
+
+.mobilestoreimg{
+    display: none;
 }
 
 .aboutintro .aboutbrief .aboutstickers .sticker {
@@ -266,6 +356,44 @@ margin-right: 0;
     margin-bottom: 20px;
 }
 
+@media (max-width: 768px){
+    .aboutintro{
+        padding-top: 15vh;
+
+    }
+    .marginguide{
+        margin-left: 10px;
+    }
+
+    .aboutintro .abouttitle h1{
+        font-size: 30px;
+        height: 100%;
+        padding-top: 25px;
+    }
+
+    .aboutintro .aboutbrief h2{
+        font-size: 30px;
+    }
+
+    .aboutintro .aboutbrief p{
+        font-size: 25px;
+    }
+
+    .aboutintro .aboutbrief .aboutstickers .sticker {
+        display: none;
+    }
+
+    .mobilestoreimg{
+        display: block;
+    }
+
+    .mobilestoreimg img{
+        height: 300px;
+        min-width: 100%;
+    }
+
+}
+
 /* SECTION */
 
 section .aboutlogo{
@@ -273,7 +401,7 @@ section .aboutlogo{
 }
 
 section .aboutlogo .logotitle{
-    height: 6vw;
+    height: 12vh;
     border-bottom: 5px solid #333;
 }
 section .aboutlogo .logotitle h1{
@@ -299,7 +427,7 @@ section .aboutcolor{
     border-bottom: 5px solid #333;
 }
 section .aboutcolor .colortitle{
-    height: 6vw;
+    height: 12vh;
     border-bottom: 5px solid #333;
 }
 
@@ -307,6 +435,27 @@ section .aboutcolor .colortitle h1{
     font-size: 65px;
     font-weight: 800;
     padding-top: 5px;
+}
+
+
+@media (max-width: 768px){
+
+    section .aboutlogo .logotitle h1,
+    section .aboutcolor .colortitle h1{
+        font-size: 30px;
+        font-weight: 800;
+        padding-top: 25px;
+    }
+
+    section .aboutlogo .logobrief p{
+        font-size: 25px;
+    }
+
+    section .aboutlogo .logobrief img{
+        max-width: 100%;
+        height: auto;
+    }
+
 }
 
 section .aboutcolor .colorwrapper{
@@ -409,7 +558,73 @@ background-color: #ae5761;
 color: #333;
 }
 
+@media (max-width: 768px){
 
+    section .aboutcolor .colorwrapper{
+        border-bottom: 5px solid #333;
+    }
+    
+    section .aboutcolor .colorwrapper .colordetails{
+        width: 100%;
+        height: 300px;
+        border-right: 0;
+    }
+    
+    section .aboutcolor .colorwrapper .colordetails span{
+        
+        height: 100px;
+        border-bottom: 5px solid #333;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+    
+    }
+    section .aboutcolor .colorwrapper .colordetails span p{
+        font-size: 20px;
+        padding: 0;
+    }
+
+    section .aboutcolor .colorwrapper .onecolor{
+        display: none;
+    }
+
+    section .aboutcolor .colorwrapper .colordetails span::after{
+        display: none;
+    }
+    
+    section .aboutcolor .colorwrapper .colordetails span:hover::after{
+    display: none;
+    }
+
+    section .aboutcolor .colorwrapper .colordetails span:hover p{
+        color: #fff
+    }
+
+    section .aboutcolor .colorwrapper .colordetails span:hover{
+        background-color: #ae5761;
+    }
+
+    section .aboutcolor .colorwrapper .colordetails span:nth-child(3){
+        border-bottom: none;
+    }
+
+    section .aboutcolor .colordiverse .topcolor div,
+section .aboutcolor .colordiverse .btmcolor div{
+    width: 100%;
+    height: 200px;
+    border-right: 5px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .aboutcolor .colordiverse p{
+    font-size: 20px;
+    padding: 0;
+}
+
+
+}
 
 
 
@@ -422,6 +637,7 @@ footer .flogo{
 
 footer .fmenu{
     display: flex;
+    flex-wrap: wrap;
 }
 
 footer .fmenu li+li{
