@@ -186,3 +186,21 @@ new Swiper(".youmay .mySwiper", {
       prevEl: ".youmay .swiper-button-prev",
     },
   });
+
+  new Swiper(".youmaymobileslide .mySwiper", {
+    slidesPerView : 2,
+    spaceBetween: 5,
+    loop: true,
+    autoplay: {
+        delay: 5000
+    },
+    pagination: {
+      el: ".youmaymobileslide .swiper-pagination",
+      clickable: true,
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".youmaymobileslide .swiper-button-next",
+      prevEl: ".youmaymobileslide .swiper-button-prev",
+    },
+  });

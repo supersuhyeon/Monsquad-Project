@@ -608,15 +608,11 @@ width: calc(100%/4);
    font-size: 15px;
     }
 
-    .modalBox ul li strong{
-        font-weight: 800;
-        font-size: 15px;
-         }
      .modalBox ul li>p{
              font-weight: normal;
              font-size: 15px;
              padding: 0;
-             margin: 5px 0 0 0;
+             margin: 0;
              color: red;
               }
     
@@ -713,8 +709,6 @@ background-color: #ae5761;
         .modalBox ul li>p{
                 font-weight: normal;
                 font-size: 14px;
-                padding: 0;
-                margin: 5px 0 0 0;
                 color: red;
                  }
          
@@ -761,12 +755,6 @@ section .prowrappers .rightbrief .pricedetails{
     }
 }
 
-section .prowrappers .rightbrief .pricedetails h1{
- font-size: 50px;
- font-weight: 800;
- padding-top: 20px;
-}
-
 section .prowrappers .rightbrief .onlinebtn{
     height: 100px;
     background-color: #ae5761;
@@ -792,24 +780,28 @@ section .prowrappers .rightbrief .onlinebtn:hover a{
 @media (max-width: 768px){
 
     section .prowrappers .rightbrief .pricedetails{
-       border-top: 5px solid #333;
+        height: 50px;
+        padding-left: 20px;
+        border-top: 5px solid #333;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+
+    section .prowrappers .rightbrief .pricedetails h1{
+        font-size: 30px;
+        font-weight: 800;
        }
 
     section .prowrappers .rightbrief .onlinebtn a{
-        width: 100%;
-        height: 100%;
         color: #333;
-        font-size: 45px;
-        padding: 25px 0 0 30px;
+        font-size: 30px;
         font-weight: 800;
-        text-align: left;
 
     }
 
     section .prowrappers .rightbrief .onlinebtn{
-        height: 100px;
+        height: 55px;
         background-color: #ae5761;
-        margin-top: 10px;
         border-top: 5px solid #333;
         border-bottom: 0;
     }
@@ -833,9 +825,15 @@ display: flex;
 @media (max-width: 768px){
 
     section .youmay{
-        display: none;
+        border-bottom: 0;
     }
 
+    .youmay .youmaytitle{
+        height: 100%;
+        border-bottom: 5px solid #333;
+        display: flex;
+    }
+        
 }
 
 .youmay .youmaytitle .ybigtitle{
@@ -870,6 +868,30 @@ background-color: #ae5761;
 .youmay .youmaytitle .leftbtn .nextbtn{
     width: calc(100%/2);
     position: relative;
+}
+
+@media (max-width: 768px){
+
+    .youmay .youmaytitle .ybigtitle h1{
+        font-size: 30px;
+        font-weight: 800;
+        }
+
+        .youmay .youmaytitle .ybigtitle{
+            width: 100%;
+            height: 50px;
+            border-right: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            }
+
+            .youmay .youmaytitle .leftbtn{
+               display: none;
+            }
+        
 }
 
 
@@ -957,6 +979,68 @@ padding-top: 10px;
     color: #fff;
 }
 
+/* youmaymobileslide */
+
+.youmaymobileslide{
+    display: none;
+    border-bottom: 5px solid #333;
+}
+
+.youmaymobileslide .mySwiper .swiper-wrapper .swiper-slide{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.1);
+    }
+
+.youmaymobileslide .mySwiper .swiper-wrapper .swiper-slide img{
+    width: 100px;
+    height: 300px;
+    margin: auto;
+    }
+
+.youmaymobileslide .mySwiper .swiper-wrapper .swiper-slide .producttext{
+        height: 30px;
+        margin: auto;
+        }
+    
+
+.youmaymobileslide .mySwiper .swiper-wrapper .swiper-slide .seemore{
+        border-top: 5px solid #333;
+        height: 50px;
+        font-weight: 800;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.youmaymobileslide .mySwiper .swiper-wrapper .swiper-slide h1{
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+
+}
+        
+.youmaymobileslide .swiper-button-next,
+.youmaymobileslide .swiper-button-prev{
+color: #333;
+}
+
+@media (max-width: 768px){
+    .youmay .swiper.mySwiper{
+        display: none;
+        
+    }
+
+    .youmaymobileslide{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    
+}
 
 /* FOOTER SECTION */
 
