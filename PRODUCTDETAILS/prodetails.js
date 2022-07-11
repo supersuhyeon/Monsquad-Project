@@ -19,6 +19,13 @@ menuIcon.addEventListener('click', (e)=>{
     }
 })
 
+const mobileIcon = document.querySelector('.menuicon-mobile')
+const mobileDrop = document.querySelector('.dropmenu-mobile')
+
+mobileIcon.addEventListener('click', (e)=>{
+    mobileDrop.classList.toggle('active')
+})
+
 new Swiper('.menuimg .mySwiper', {
     loop:true,
     autoplay:{
@@ -31,6 +38,18 @@ new Swiper('.menuimg .mySwiper', {
       },
   
 });
+
+new Swiper(".prowrappers .mySwiper", {
+    loop: true,
+    autoplay: {
+        delay: 5000
+    },
+    pagination: {
+      el: ".prowrappers .swiper-pagination",
+      clickable: true,
+      type: "fraction",
+    }
+  });
 
 //lodash_ throttle(함수,시간)
 //gsap.to() 애니메이션
