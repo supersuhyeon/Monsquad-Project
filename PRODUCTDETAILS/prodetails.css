@@ -315,7 +315,7 @@ padding-top: 5px;
     section .detailstitle h1{
         font-size: 30px;
         height: 100%;
-        padding: 20px 0 20px ;
+        padding: 25px 0;
         overflow: hidden;
     }
 }
@@ -425,6 +425,10 @@ section .prowrappers .rightbrief .texttitle p{
         width: 100%;
     }
     
+    section .prowrappers .rightbrief .texttitle{
+        padding: 20px;
+    }
+
     section .prowrappers .rightbrief .texttitle h1{
         font-size: 20px;
         font-weight: 800;
@@ -453,6 +457,10 @@ font-weight: 600;
     section .prowrappers .rightbrief .texttoggle p{
         font-size: 100%;
     }
+
+    section .prowrappers .rightbrief .texttoggle{
+        padding-left: 20px;
+        }
 }
 
 section .prowrappers .rightbrief .texttoggle .toggle-icon,
@@ -512,6 +520,12 @@ section .prowrappers .rightbrief .colordetails h1{
  }
 
  @media (max-width: 768px){
+
+
+    section .prowrappers .rightbrief .colordetails{
+    padding-left: 20px;
+ }
+
     section .prowrappers .rightbrief .texttoggle p{
         font-size: 100%;
     }
@@ -522,7 +536,7 @@ section .prowrappers .rightbrief .colordetails h1{
 }
 
  section .prowrappers .rightbrief .colordetails .bgcolors{
-display: flex;
+    display: flex;
  }
 
 section .prowrappers .rightbrief .colordetails .bgcolor{
@@ -650,6 +664,10 @@ background-color: #ae5761;
 
  @media (max-width: 768px){
 
+    section .prowrappers .rightbrief .sizedetails{
+        padding-left: 20px;
+     }
+
     section .prowrappers .rightbrief .sizedetails .sizeguide{
         position: absolute;
         top: 3px;
@@ -748,6 +766,11 @@ section .prowrappers .rightbrief .pricedetails{
 
 @media (max-width: 768px){
 
+    section .prowrappers .rightbrief .qtydetails{
+        padding-left: 20px;
+    }
+    
+
     section .prowrappers .rightbrief .qtydetails h1{
         font-size: 20px;
         font-weight: 800;
@@ -781,7 +804,7 @@ section .prowrappers .rightbrief .onlinebtn:hover a{
 
     section .prowrappers .rightbrief .pricedetails{
         height: 50px;
-        padding-left: 30px;
+        padding-left: 20px;
         border-top: 5px solid #333;
         padding-top: 10px;
         box-sizing: border-box;
@@ -1007,7 +1030,7 @@ padding-top: 10px;
 
 .youmaymobileslide .mySwiper .swiper-wrapper .swiper-slide .seemore{
         border-top: 5px solid #333;
-        height: 50px;
+        height: 45px;
         font-weight: 800;
         font-size: 20px;
         text-align: center;
@@ -1017,7 +1040,7 @@ padding-top: 10px;
 }
 
 .youmaymobileslide .mySwiper .swiper-wrapper .swiper-slide h1{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 800;
     text-align: center;
 
