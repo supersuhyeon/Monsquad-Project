@@ -310,6 +310,7 @@ padding-top: 5px;
 @media (max-width: 768px){
     section .detailstitle{
         padding-top: 15vh;
+        height: 100%;
     }
 
     section .detailstitle h1{
@@ -760,8 +761,17 @@ section .prowrappers .rightbrief .qtydetails .qtynumbers #result{
 }
 
 section .prowrappers .rightbrief .pricedetails{
+    margin-top: 30px;
     height: 100px;
     padding-left: 30px;
+    border-top: 5px solid #333;
+}
+
+section .prowrappers .rightbrief .pricedetails h1{
+    font-size: 65px;
+    font-weight: 800;
+    padding-top: 15px;
+    box-sizing: border-box;
 }
 
 @media (max-width: 768px){
@@ -813,6 +823,7 @@ section .prowrappers .rightbrief .onlinebtn:hover a{
     section .prowrappers .rightbrief .pricedetails h1{
         font-size: 30px;
         font-weight: 800;
+        padding-top: 0;
        }
 
     section .prowrappers .rightbrief .onlinebtn a{
@@ -965,7 +976,8 @@ margin: auto;
 }
 
 .youmay .mySwiper .swiper-wrapper .swiper-slide .producttext{
-    padding: 20px;
+    height: 60px;
+    margin: auto;
 }
 
 .youmay .mySwiper .swiper-wrapper .swiper-slide h1{

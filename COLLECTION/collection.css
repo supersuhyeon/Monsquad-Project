@@ -298,25 +298,28 @@ header .home_logo img{
 /* SECTION */
 
 .collectitle{
-    min-height: 6vw;
+    height: 12vh;
     border-bottom: 5px solid #333;
-    padding-top: 5px;
-    /* background-color: #ae5761; */
+   
 }
 
 .collectitle h1{
     font-size: 65px;
     font-weight: 800;
+    padding-top: 5px;
 }
 
 @media (max-width: 768px){
     .collectitle{
         padding-top: 15vh;
+        height: 100%;
+        
     }
     .collectitle h1{
         font-size: 30px;
         height: 100%;
-        padding: 20px 0 20px ;
+        padding: 25px 0;
+        overflow: hidden;
     }
 } 
 
@@ -420,11 +423,16 @@ height: 100%;
 }
 
 .collecproducts .collecwrapper li img{
-margin: auto;
+    width: 200px;
+    height: 600px;
+    margin: auto;
+    padding: 5px 0 5px 0;
 }
 
 .collecproducts .collecwrapper li .producttext{
-padding: 20px;
+    height: 60px;
+    margin: auto;
+    padding: 0;
 }
 
 .collecproducts .collecwrapper li .producttext h1{
@@ -484,6 +492,12 @@ box-sizing: border-box;
         border-right: 5px solid #333;
     }
 
+    .collecproducts .collecwrapper li .producttext{
+        height: 30px;
+        margin: auto;
+        padding: 0;
+        }
+
     .collecproducts .collecwrapper li:nth-child(2),
     .collecproducts .collecwrapper li:nth-child(6){
         border-right: 0;
@@ -491,19 +505,23 @@ box-sizing: border-box;
 
     .collecproducts .collecwrapper li .seemore{
         border-top: 5px solid #333;
-        border-bottom: 5px solid #333;
-        height: 100%;
-        padding: 10px;
-        text-align: center;
-        font-size: 100%;
+        height: 45px;
         font-weight: 800;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         box-sizing: border-box;
+        padding-top: 0;
         }
 
     .collecproducts .collecwrapper li img{
-        width: 50px;
-        height: auto;
-        padding-top: 20px;
+        width: 100px;
+        height: 300px;
+        margin: auto;
+        padding: 5px 0 5px 0;
+        box-sizing: border-box;
         }
 
     .tab label {
@@ -523,7 +541,7 @@ box-sizing: border-box;
   }
 
   .collecproducts .collecwrapper li .producttext h1{
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 800;
     text-align: center;
     }

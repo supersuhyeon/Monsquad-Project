@@ -492,13 +492,14 @@ section .newnotice .noticetitle h1{
 
     section .newnotice .noticetitle{
         height: 100%;
-        padding: 10px 0 10px;
         
     }
 
     section .newnotice .noticetitle h1{
-        font-size: 30px;  
-        overflow: hidden;     
+        font-size: 30px;
+        height: 100%;
+        padding: 25px 0;
+        overflow: hidden;    
     }
 
 }
@@ -634,10 +635,18 @@ section .newproduct .productwrapper li>a{
 
 section .newproduct .productwrapper li img{
     margin: auto;
+    padding: 5px 0 5px 0;
 }
 
 section .newproduct .productwrapper li .producttext{
-    padding: 20px;
+    height: 60px;
+    margin: auto;
+    overflow: hidden;
+}
+
+section .newproduct .productwrapper li .producttext strong{
+    font-weight: normal;
+    font-size: 15px;
 }
 
 section .newproduct .productwrapper li .producttext h1{
@@ -690,6 +699,17 @@ section .newproduct .productwrapper li:hover .seemore{
         padding: 10px;
         font-size: 100%;
         height: 100%;
+    }
+
+    section .newproduct .productwrapper li .producttext{
+        height: 50px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    section .newproduct .productwrapper li .producttext strong{
+        font-weight: normal;
+        font-size: 12px;
     }
 
     section .newproduct .productwrapper li .producttext h1{
