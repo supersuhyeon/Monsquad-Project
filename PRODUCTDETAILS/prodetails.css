@@ -1042,9 +1042,9 @@ padding-top: 10px;
 
 .youmaymobileslide .mySwiper .swiper-wrapper .swiper-slide .seemore{
         border-top: 5px solid #333;
-        height: 45px;
+        height: 40px;
         font-weight: 800;
-        font-size: 20px;
+        font-size: 100%;
         text-align: center;
         display: flex;
         align-items: center;

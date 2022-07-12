@@ -672,7 +672,7 @@ section .newproduct .productwrapper li:hover .seemore{
 @media (max-width: 768px){
 
     section .newproduct .productwrapper li{
-        min-width: calc(100%/2);
+        width: calc(100%/2);
         height: 100%;
         border-bottom: 5px solid #333;
     }
@@ -694,7 +694,6 @@ section .newproduct .productwrapper li:hover .seemore{
     }
 
     section .newproduct .productwrapper li .seemore{
-        min-height: 100%;
         overflow: hidden;
         padding: 10px;
         font-size: 100%;
@@ -771,7 +770,7 @@ section .wheretobuy .shoptitle{
 section .wheretobuy .shoptitle::after{
     content: '';
     display: block;
-    border-bottom: 100px solid #ae5761;
+    border-bottom: 94px solid #ae5761;
     margin-top: -83px;
     width: 0;
     transition: 0.8s;
@@ -802,13 +801,15 @@ section .wheretobuy .shoptitle:hover h1{color: #fff;}
     section .wheretobuy .wheretitle,
     section .wheretobuy .shoptitle{
         overflow: hidden;
+        height: 100%;
     }
 
     section .wheretobuy .wheretitle h1,
     section .wheretobuy .shoptitle h1{
         font-size: 30px;
         height: 100%;
-        padding-top: 25px;
+        padding: 25px 0;
+        overflow: hidden;    
 
 }
 
