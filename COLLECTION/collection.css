@@ -430,7 +430,7 @@ height: 100%;
 }
 
 .collecproducts .collecwrapper li .producttext{
-    height: 60px;
+    height: 55px;
     margin: auto;
     padding: 0;
 }
@@ -493,7 +493,7 @@ box-sizing: border-box;
     }
 
     .collecproducts .collecwrapper li .producttext{
-        height: 30px;
+        height: 25px;
         margin: auto;
         padding: 0;
         }
