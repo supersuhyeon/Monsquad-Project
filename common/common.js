@@ -33,7 +33,7 @@ mobileIcon.addEventListener('click', (e)=>{
 window.addEventListener('scroll', _.throttle(function(){
     console.log(window.scrollY)
     if(window.scrollY > 500){
-        //hide
+        //show
         
         // gsap.to(요소,지속시간,옵션);
         gsap.to('#go-top',.2,{
@@ -42,7 +42,7 @@ window.addEventListener('scroll', _.throttle(function(){
 
 
     }else{
-        // show
+        // hide
         
         gsap.to('#go-top',.2,{
             x: 100,

@@ -39,7 +39,7 @@ toggleBtn.addEventListener('click', function(){
     isHideDescription = !isHideDescription
     if(isHideDescription){
         //hide
-        descripEl.classList.add('hide')
+        descripEl.classList.add('hide') // display:block
     }else{
         //show
         descripEl.classList.remove('hide')
@@ -87,7 +87,7 @@ function count(type)  {
         stockEl.innerHTML = "<img src='/PRODUCTDETAILS/details_img/error.png'> Opps, Sorry! It is out of stock"
         // stockEl.innerText = "out of stock"
         priceEl.style.color = 'red';
-    }else if(number < 2 && number > 0){
+    }else if(number < 2){
         stockEl.innerHTML = "<img src='/PRODUCTDETAILS/details_img/check.png'> Available on Amazon";
         priceEl.style.color = '#333';
     }else if(number === 0){
