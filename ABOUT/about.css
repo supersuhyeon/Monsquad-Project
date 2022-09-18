@@ -299,6 +299,8 @@ border-bottom: 5px solid #333;
     height: 12vh;
     border-bottom: 5px solid #333;
     /* background-color: #ae5761; */
+    display: flex;
+    align-items: center;
 }
 
 .aboutintro .abouttitle h1{
@@ -417,6 +419,8 @@ section .aboutlogo{
 section .aboutlogo .logotitle{
     height: 12vh;
     border-bottom: 5px solid #333;
+    display: flex;
+    align-items: center;
 }
 section .aboutlogo .logotitle h1{
     font-size: 65px;
@@ -443,6 +447,8 @@ section .aboutcolor{
 section .aboutcolor .colortitle{
     height: 12vh;
     border-bottom: 5px solid #333;
+    display: flex;
+    align-items: center;
 }
 
 section .aboutcolor .colortitle h1{

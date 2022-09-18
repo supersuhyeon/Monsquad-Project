@@ -300,7 +300,8 @@ header .home_logo img{
 .collectitle{
     height: 12vh;
     border-bottom: 5px solid #333;
-   
+    display: flex;
+    align-items: center;
 }
 
 .collectitle h1{

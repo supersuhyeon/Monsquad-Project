@@ -324,144 +324,25 @@ header .badges .badge{
 
 /* MAIN SECTION */
 main{
-    position: relative;
     height: 550px;
     border-bottom: 5px solid #333;
-    background-size: cover;
-    background-repeat: no-repeat;
     overflow: hidden;
 }
 
 main .mainintro img{
-    position: absolute;
+width: 100%;
+height: 550px;
 }
-
-main .mainintro img:first-child{
-    top: 0;
-    left: 17%;
-    z-index: 80;
-}
-
-main .mainintro img:nth-child(2){
-    top: 230px;
-    left: 310px;
-    width: 80px;
-    height: 50px;
-    z-index: 83;
-}
-
-main .mainintro img:nth-child(2):hover{
-    animation: bounce infinite;
-    animation-duration: 1s;
-}
-
-main .mainintro img:nth-child(3){
-    top: 450px;
-    left: 750px;
-    width: 80px;
-    height: 50px;
-    z-index: 83;
-}
-
-main .mainintro img:nth-child(3):hover{
-    animation: tilt 1s infinite;
-}
-
-main .mainintro img:nth-child(4){
-    top: 470px;
-    left: 420px;
-    width: 80px;
-    height: 50px;
-    z-index: 83;
-}
-
-main .mainintro img:nth-child(4):hover{
-animation: movemove 1s infinite;
-}
-
-main .mainintro img:nth-child(5){
-    top: 30px;
-    left: 220px;
-    width: 100px;
-    height: 50px;
-    z-index: 81;
-}
-
-main .mainintro img:nth-child(5):hover{
-    animation: bounce2 2s;
-}
-
-main .mainintro img:nth-child(6){
-    top: 230px;
-    right: 160px;
-    width: 220px;
-    height: 350px;
-    z-index: 82;
-}
-
-main .mainintro img:nth-child(6):hover{
-    animation: tilt 1s; 
-}
-
-main .mainintro img:nth-child(7){
-    top: 45%;
-    left: 17%;
-    z-index: 80;
-}
-
-main .mainintro img:nth-child(8){
-z-index: 82;
-left: 30%;
-top: 30px;
-transform: rotate(-30deg);
-}
-
-main .mainintro img:nth-child(8):hover{
-    animation: tilt 1s infinite alternate;
-}
-
-main .mainmobile img{
-    display: none;
-    padding-top: 120px;
-}
-
-@keyframes tilt{
-    from{transform: rotate(0);}
-    30%{transform: rotate(-30deg);}
-    50%{transform: rotate(10deg);}
-    70%{transform: rotate(-10deg);}
-    to{transform: rotate(0deg);} 
-}
-
-@keyframes bounce{
-    from{margin-top:0;}
-    to{margin-top: -20px;}
-}
-
-@keyframes bounce2{
-    from{margin-top:0;}
-    to{margin-top: -10px; transform:rotate(360deg);}
-}
-
-@keyframes movemove{
-    from{transform: translateX(0) ;}
-    50%{transform: translateX(30px);}
-    to{transform: translateX(60px)}
-}
-
 
 @media (max-width: 768px){
     .mainintro img{
         display: none;
     }
 
-    main{
-        height: 100%;
-    }
-
     main .mainmobile img{
         display: block;
-        max-width: 100%;
+        width: 100%;
+        height: 550px;
     }
 }
 
@@ -475,6 +356,8 @@ section .newnotice .noticetitle{
     height: 12vh;
     border-bottom: 5px solid #333;
     transition: .3s;
+    display: flex;
+    align-items: center;
 }
 
 section .newnotice .noticetitle h1{
@@ -750,6 +633,8 @@ section .newproduct .productwrapper li:hover .seemore::after{
 section .wheretobuy .wheretitle{
     height: 12vh;
     border-bottom: 5px solid #333;
+    display: flex;
+    align-items: center;
 }
 
 section .wheretobuy .wheretitle h1{
@@ -761,19 +646,9 @@ section .wheretobuy .wheretitle h1{
 section .wheretobuy .shoptitle{
     height: 12vh;
     border-bottom: 5px solid #333;
-    /* background-color: #ae5761; */
-}
-
-
-
-section .wheretobuy .shoptitle::after{
-    content: '';
-    display: block;
-    border-bottom: 94px solid #ae5761;
-    margin-top: -83px;
-    width: 0;
-    transition: 0.8s;
-
+    background-color: #ae5761;
+    display: flex;
+    align-items: center;
 }
 
 section .wheretobuy .shoptitle:hover::after{
@@ -790,7 +665,6 @@ section .wheretobuy .shoptitle h1{
     font-size: 65px;
     font-weight: 800;
     padding-top: 5px;
-    
 }
 
 section .wheretobuy .shoptitle:hover h1{color: #fff;}
@@ -811,14 +685,6 @@ section .wheretobuy .shoptitle:hover h1{color: #fff;}
         overflow: hidden;    
 
 }
-
-section .wheretobuy .shoptitle::after{
-    display: none;
-}
-
-section .wheretobuy .shoptitle:hover::after{
-    display: none;
-    }
 
 section .wheretobuy .shoptitle:hover h1{color: white;}
 
@@ -893,12 +759,13 @@ section .monsgoods .sloganarea{
     border-bottom: 5px solid #333;
     height: 12vh;
     background-color: #ae5761;
+    display: flex;
+    align-items: center;
 }
 
 section .monsgoods .sloganarea h1{
     font-size: 60px;
     font-weight: 800;
-    padding-top: 10px;
 }
 
 section .monsgoods .bx-wrapper{

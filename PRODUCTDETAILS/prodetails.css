@@ -299,6 +299,8 @@ header .home_logo img{
 section .detailstitle{
 height: 12vh;
 border-bottom: 5px solid #333;
+display: flex;
+align-items: center;
 }
 
 section .detailstitle h1{

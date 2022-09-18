@@ -29,12 +29,11 @@ mobileIcon.addEventListener('click', (e)=>{
 //lodash_ throttle(함수,시간)
 //gsap.to() 애니메이션
 
-
+const goTopEl = document.querySelector('#go-top')
 window.addEventListener('scroll', _.throttle(function(){
-    console.log(window.scrollY)
     if(window.scrollY > 500){
         //show
-        
+        goTopEl.style.visibility = "visible"
         // gsap.to(요소,지속시간,옵션);
         gsap.to('#go-top',.2,{
             x: 0,
@@ -50,7 +49,7 @@ window.addEventListener('scroll', _.throttle(function(){
     }
 },300)) //0.3s 단위로 함수 제어
 
-const goTopEl = document.querySelector('#go-top')
+
 goTopEl.addEventListener('click', (e)=>{
     // window.scrollTo(0,0)
 gsap.to(window,.7,{

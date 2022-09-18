@@ -42,6 +42,7 @@ footer p{
     bottom: 30px;
     right: 30px;
     z-index: 81;
+    visibility: hidden;
 }
 
 @media (max-width: 768px){
