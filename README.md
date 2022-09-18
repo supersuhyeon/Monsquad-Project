@@ -1,7 +1,5 @@
 ## Skateborad Branding Website - Monsquad
 
-[Monsquad-website](https://dashing-sawine-e8332f.netlify.app/)
-
 #### web version
 
 ![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/94214512/190925200-f849410e-1c37-44a3-a0ad-e4fa60171d97.gif)
@@ -10,8 +8,8 @@
 
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/94214512/190925068-7e821f3a-6a15-4065-b31d-6b8eedab929a.gif)
 
-This is a skateboard brand's website that I created from scratch; concept, design, and code <br>
-\*This is a fictional brand
+This is a skateboard brand's website that I created from scratch; concept, design, and code.
+(_This is a fictional brand_) <br>[Monsquad-website](https://dashing-sawine-e8332f.netlify.app/)
 
 ### Goal of the project
 
@@ -23,12 +21,11 @@ HTML, CSS, Javascript
 
 ### Features
 
-1. Unique left side menu bar with sliding animation and when users click the button, it transitions into a skull's finger <img width="1502" alt="Screen Shot 2022-09-18 at 1 23 41 PM" src="https://user-images.githubusercontent.com/94214512/190926853-30364547-54ce-4a13-9e08-2e7293b33e39.png">
-   <img width="755" alt="Screen Shot 2022-09-18 at 1 22 53 PM" src="https://user-images.githubusercontent.com/94214512/190926833-7db16ed3-b886-4eb2-be8e-265a0e64595a.png">
+1. Unique left side menu bar with sliding animation and when users click the button, it transitions into a skull's finger ![3](https://user-images.githubusercontent.com/94214512/190931693-0c6a6a4c-8109-451e-85c1-0b07767e7bc4.png)![4](https://user-images.githubusercontent.com/94214512/190931690-5ecb5469-0bf9-47bb-9b21-0b9e668a87b0.png)
 
 2. Using input's radio type, created the collection's menu with HTML and CSS only.
-   <img width="650" alt="Screen Shot 2022-09-18 at 1 14 35 PM" src="https://user-images.githubusercontent.com/94214512/190926563-c49eaebe-5db4-40ca-8daa-88d6a642daaa.png">
-   <img width="1288" alt="Screen Shot 2022-09-18 at 1 15 57 PM" src="https://user-images.githubusercontent.com/94214512/190926600-4cd35ae9-e7f5-4a78-b0f6-c6107245e37b.png">
+   ![1](https://user-images.githubusercontent.com/94214512/190931494-8b37e46b-3191-44e9-ae98-12fd7561b9d3.png)
+   ![2](https://user-images.githubusercontent.com/94214512/190931496-70ac1e60-dca5-4d5c-aa70-f076e60da59d.png)
 
 ```html
 <input type="radio" id="tab-1" name="show" checked />
