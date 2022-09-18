@@ -374,8 +374,6 @@ margin-right: 0;
 
     .aboutintro .abouttitle h1{
         font-size: 30px;
-        height: 100%;
-        padding: 25px 0;
         overflow: hidden;
        
     }
@@ -464,7 +462,6 @@ section .aboutcolor .colortitle h1{
     section .aboutcolor .colortitle h1{
         font-size: 30px;
         font-weight: 800;
-        padding-top: 25px;
         overflow: hidden;
     }
 
