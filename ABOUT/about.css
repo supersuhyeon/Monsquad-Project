@@ -161,7 +161,7 @@ border-top: 0;
 
 .menuimg .swiper-pagination .swiper-pagination-bullet{
     margin-right: 2px;
-    background-image: url("/MENU/menu_img/bullet1.png");
+    background-image: url("/bullet1.png");
     background-repeat: no-repeat;
     width: 77px;
     height: 17px;
@@ -175,7 +175,7 @@ margin-right: 0;
 }
 
 .menuimg .swiper-pagination .swiper-pagination-bullet-active{
-background-image: url("/MENU/menu_img/bullet-on.png");
+background-image: url("/bullet-on.png");
 }
 
 .menuicon-mobile{
