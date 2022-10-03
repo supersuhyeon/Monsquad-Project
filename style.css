@@ -188,7 +188,7 @@ background-image: url("/bullet-on.png");
 }
 
 .menuicon-mobile .material-icons{
-font-size: 50px;
+    font-size: 50px;
 }
 
 .dropmenu-mobile{
@@ -306,7 +306,6 @@ header .badges{
 }
 
 header .badges .badge{
-
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 12px;
@@ -383,11 +382,10 @@ section .newnotice .noticetitle h1{
         padding: 25px 0;
         overflow: hidden;    
     }
-
 }
 
 section .newnotice .noticevideo{
-    height: 700px;
+    height: 600px;
     background-color: #333;
     position: relative;
     overflow: hidden;
@@ -397,8 +395,6 @@ section .newnotice .noticevideo{
 section .newnotice .noticevideo .youtube_area{
     width: 1920px;
     position: absolute;
-    top: 50%;
-    margin-top: calc(1920px * 9 / 16 / -2);
 }
 
 section .newnotice .noticevideo .youtube_area::before{
@@ -407,7 +403,6 @@ section .newnotice .noticevideo .youtube_area::before{
     width: 100%;
     height: 0;
     padding-top: 56.25%;
-
 }
 
 section .newnotice .noticevideo .youtube_cover{
@@ -428,18 +423,7 @@ section .newnotice .noticevideo .youtube_cover{
     section .newnotice .noticevideo .youtube_area{
         width: 100%;
         height: 100%;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        margin-top: 0;
     }
-
-    section .newnotice .noticevideo .youtube_area::before{
-        width: 0;
-        padding-top: 0;
-    }
-
 }
 
 #player{
@@ -448,7 +432,6 @@ section .newnotice .noticevideo .youtube_cover{
     position: absolute;
     top: 0;
     left: 0;
-
 }
 
 section .noticevideo .floatingbtn{
@@ -479,11 +462,8 @@ section .newnotice .noticebrief p{
     section .newnotice .noticebrief p{
         font-size: 20px;
         overflow: hidden;
-        
     }
-
 }
-
 
 section .newproduct{
     margin: 0 auto;

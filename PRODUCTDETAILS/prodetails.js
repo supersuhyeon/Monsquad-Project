@@ -1,5 +1,3 @@
-
-
 new Swiper('.menuimg .mySwiper', {
     loop:true,
     autoplay:{
@@ -62,7 +60,7 @@ toggleBtn2.addEventListener('click', function(){
 
 function count(type)  {
     // 결과를 표시할 element
-    const resultElement = document.getElementById('result');
+    const resultElement = document.querySelector('#result');
     
     // 현재 화면에 표시된 값
     let number = resultElement.innerText;
@@ -87,11 +85,12 @@ function count(type)  {
         stockEl.innerHTML = "<img src='/PRODUCTDETAILS/details_img/error.png'> Opps, Sorry! It is out of stock"
         // stockEl.innerText = "out of stock"
         priceEl.style.color = 'red';
-    }else if(number < 2){
+    }else if(number > 0 && number < 2){
         stockEl.innerHTML = "<img src='/PRODUCTDETAILS/details_img/check.png'> Available on Amazon";
         priceEl.style.color = '#333';
     }else if(number === 0){
-        stockEl.innerText = '';
+        stockEl.innerHTML = '';
+        // return;
     }
   }
 

@@ -1,4 +1,3 @@
-
 new Swiper('.mySwiper', {
     loop:true,
     autoplay:{
