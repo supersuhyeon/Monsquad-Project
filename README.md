@@ -22,15 +22,16 @@ HTML, CSS, Javascript
 ### Features
 
 1. Quantity display button<br>
-   ![ezgif com-gif-maker (12)](https://user-images.githubusercontent.com/94214512/193512615-b80e2c7c-ff54-41e2-b3ac-5d1b6bab1d47.gif)<br>
+   ![ezgif com-gif-maker (14)](https://user-images.githubusercontent.com/94214512/196019192-23fc9b84-f9b3-49d7-bd2a-b936f343f05f.gif)
+   <br>
 
 ```html
 <div class="qtydetails">
   <h1>QTY</h1>
   <div class="qtynumbers">
-    <input type="button" onclick='count("plus")' value="+" />
-    <div id="result">0</div>
     <input type="button" onclick='count("minus")' value="-" />
+    <div id="result">0</div>
+    <input type="button" onclick='count("plus")' value="+" />
   </div>
   <div class="stock"></div>
 </div>
