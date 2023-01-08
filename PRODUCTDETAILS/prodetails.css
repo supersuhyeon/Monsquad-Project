@@ -620,30 +620,30 @@ section .prowrappers .rightbrief .sizedetails{
      }
 
 section .prowrappers .rightbrief .sizedetails .sizeguide{
-        position: absolute;
-        top: 3px;
-        right: 35px;
-        font-weight: 800;
-        border-bottom: 3px solid #333;
+    position: absolute;
+    top: 3px;
+    right: 35px;
+    font-weight: 800;
+    border-bottom: 3px solid #333;
     
-    }
+}
 
-    section .prowrappers .rightbrief .sizedetails h1{
-        font-size: 20px;
-    }
+section .prowrappers .rightbrief .sizedetails h1{
+    font-size: 20px;
+}
 
-    .modal{
-        z-index: 99;
-    }
+.modal{
+    z-index: 99;
+}
 
-    .modalBox {
-        position: absolute;
-        background-color: #fff;
-        width: 100%;
-        height: 100%;
-        padding: 15px;
-        text-align: center;
-      }
+.modalBox {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    text-align: center;
+}
     
       .modalBox p{
         padding-top: 40px;
