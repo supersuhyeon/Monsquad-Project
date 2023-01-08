@@ -110,7 +110,6 @@ a{
 .bottommenu .menutext{
     width: calc(85vw/2);
     height: 100%;
-    /* background-color: pink; */
 }
 .bottommenu .menutext ul li{
     border-bottom: 5px solid #333;
@@ -146,7 +145,6 @@ border-top: 0;
 
 .bottommenu .menuimg{
     width: calc(85vw/2);
-    height: 100%;
     border-left: 5px solid #333;
 }
 
@@ -157,7 +155,7 @@ border-top: 0;
 
 .menuimg .swiper-pagination{
    position: absolute;
-   left: 340px !important;
+   left: 22vw !important;
 }
 
 .menuimg .swiper-pagination .swiper-pagination-bullet{
@@ -184,7 +182,6 @@ background-image: url("/bullet-on.png");
     top: 30px;
     right: 20px;
     display: none;
-
 }
 
 .menuicon-mobile .material-icons{
@@ -211,7 +208,7 @@ background-image: url("/bullet-on.png");
 }
 
 .dropmenu-mobile .dropdown-mobile li:hover a{
-color: #fff;
+    color: #fff;
 }
 
 .dropmenu-mobile .dropdown-mobile li a{
@@ -227,7 +224,7 @@ color: #fff;
 
 
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     .rightmenubar{
         display: none;
     }
@@ -314,7 +311,7 @@ header .badges .badge{
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     header .badges{
         transform: translateX(200px);
     }
@@ -323,25 +320,30 @@ header .badges .badge{
 
 /* MAIN SECTION */
 main{
-    height: 550px;
     border-bottom: 5px solid #333;
     overflow: hidden;
 }
 
 main .mainintro img{
-width: 100%;
-height: 550px;
+    max-width: 100%;
+    height: auto;
+    border: 0;
 }
 
-@media (max-width: 768px){
+main .mainmobile img{
+    display: none;
+}
+
+@media (max-width: 1024px){
     .mainintro img{
         display: none;
     }
 
     main .mainmobile img{
         display: block;
-        width: 100%;
-        height: 550px;
+        max-width: 100%;
+        height: auto;
+        border: 0;
     }
 }
 
@@ -365,7 +367,7 @@ section .newnotice .noticetitle h1{
     padding-top: 5px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
 
     .marginguide{
         margin: 0 20px 0;
@@ -415,10 +417,10 @@ section .newnotice .noticevideo .youtube_cover{
     height: 100%;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     
     section .newnotice .noticevideo{
-        height: 200px;
+        height: 400px;
     }
     section .newnotice .noticevideo .youtube_area{
         width: 100%;
@@ -452,7 +454,7 @@ section .newnotice .noticebrief p{
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     
     section .noticevideo .floatingbtn img{
         width: 70px;
@@ -486,7 +488,7 @@ section .newproduct .productwrapper li{
 }
 
 section .newproduct .productwrapper li:last-child{
-border-right: 0;    
+    border-right: 0;    
 }
 
 section .newproduct .productwrapper li>a{
@@ -531,7 +533,7 @@ section .newproduct .productwrapper li:hover .seemore{
     color: #fff;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
 
     section .newproduct .productwrapper li{
         width: calc(100%/2);
@@ -545,7 +547,7 @@ section .newproduct .productwrapper li:hover .seemore{
     }
 
     section .newproduct .productwrapper li img{
-        width: 50px;
+        max-width: 100%;
         height: auto;
         padding-top: 20px;
     }
@@ -558,8 +560,7 @@ section .newproduct .productwrapper li:hover .seemore{
     section .newproduct .productwrapper li .seemore{
         overflow: hidden;
         padding: 10px;
-        font-size: 100%;
-        height: 100%;
+        font-size: 1.2rem;
     }
 
     section .newproduct .productwrapper li .producttext{
@@ -574,7 +575,7 @@ section .newproduct .productwrapper li:hover .seemore{
     }
 
     section .newproduct .productwrapper li .producttext h1{
-        font-size: 100%;
+        font-size: 1rem;
         overflow: hidden;
     }
 }
@@ -594,7 +595,7 @@ section .newproduct .productwrapper li:hover .seemore::after{
     width: 100%;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
 
     section .newproduct .productwrapper li .seemore::after{
         display: none;
@@ -649,7 +650,7 @@ section .wheretobuy .shoptitle h1{
 
 section .wheretobuy .shoptitle:hover h1{color: #fff;}
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
 
     section .wheretobuy .wheretitle,
     section .wheretobuy .shoptitle{
@@ -699,7 +700,7 @@ section .wheretobuy .addresswrapper .laaddress p{
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
 section .wheretobuy .addresswrapper .kraddress p,
 section .wheretobuy .addresswrapper .laaddress p{
     font-size: 100%;
@@ -754,7 +755,7 @@ section .monsgoods .bx-wrapper{
     margin-bottom: 0;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
 
     section .monsgoods .sloganarea{
         height: 100%;

@@ -226,7 +226,7 @@ padding: 51px;
 
 
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     .rightmenubar{
         display: none;
     }
@@ -293,8 +293,6 @@ header .home_logo img{
     cursor: pointer;
 }
 
-
-
 /* SECTION */
 section .detailstitle{
 height: 12vh;
@@ -309,7 +307,7 @@ font-weight: 800;
 padding-top: 5px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     section .detailstitle{
         padding-top: 15vh;
         height: 100%;
@@ -334,63 +332,28 @@ section .prowrappers .leftgallery{
     width: calc(100%/2);
 }
 
-section .prowrappers .leftgallery .imgs .bgimg{
-    width: 100%;
-    height: 600px;
+section .prowrappers .leftgallery .imgs img{
+    max-width: 100%;
+    height: auto;
     border-bottom: 5px solid #333;
     border-right: 5px solid #333;
-    background-color: #ae5761;
     box-sizing: border-box;
 }
 
-section .prowrappers .leftgallery .imgs .bgimg:nth-child(1){
-background-image: url('/PRODUCTDETAILS/details_img/details2.jpg');
-background-size: cover;
-background-position-x: -50px;
-}
-
-section .prowrappers .leftgallery .imgs .bgimg:nth-child(2){
-    background-image: url('/PRODUCTDETAILS/details_img/details3.jpg');
-    background-size: cover;
-    background-position-x: -50px;
-    }
-
-section .prowrappers .leftgallery .imgs .bgimg:nth-child(3){
-    background-image: url('/PRODUCTDETAILS/details_img/details1.jpg');
-    background-size: cover;
-    background-position-x: -50px;
-}
-
-section .prowrappers .leftgallery .imgs .bgimg:nth-child(4){
-    background-image: url('/PRODUCTDETAILS/details_img/details4.jpg');
-    background-size: cover;
-    background-position-x: -50px;
-    border-bottom: 0;
+section .prowrappers .leftgallery .imgs img:last-child{
+    border-bottom: none;
 }
 
 section .prowrappers .mobilegallery{
     display: none;
-    width: 100%;
-    height: 400px;
 }
 
-section .prowrappers .mobilegallery .swiper-slide{
-    width: 100%;
-    height: 400px;
-}
-
-section .prowrappers .mobilegallery .swiper-slide img{
-    width: 100%;
-    height: 100%;
-}
-
-@media (max-width: 768px){
+@media (max-width: 1024px){
 
     section .prowrappers{
         width: 100%;
         display: block;
         border-bottom: 5px solid #333;
-        
     }
 
     section .prowrappers .leftgallery{
@@ -401,6 +364,10 @@ section .prowrappers .mobilegallery .swiper-slide img{
         display: block;
     }
 
+    section .prowrappers .mobilegallery .swiper-slide{
+        max-width: 100%;
+        border: 0;
+    }
 }
 
 section .prowrappers .rightbrief{
@@ -422,7 +389,7 @@ section .prowrappers .rightbrief .texttitle p{
     font-weight: 600;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
 
     section .prowrappers .rightbrief{
         width: 100%;
@@ -444,56 +411,39 @@ section .prowrappers .rightbrief .texttitle p{
     }
 }
 
-section .prowrappers .rightbrief .texttoggle{
-display: flex;
-align-items: center;
-margin-bottom: 20px;
-padding-left: 30px;
+.menutab{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
 }
 
-section .prowrappers .rightbrief .texttoggle p{
-font-size: 16px;
-font-weight: 600;
+.menutab-container{
+    margin-bottom: 10px;
 }
 
-@media (max-width: 768px){
-    section .prowrappers .rightbrief .texttoggle p{
-        font-size: 100%;
-    }
-
-    section .prowrappers .rightbrief .texttoggle{
-        padding-left: 20px;
-        }
+section .prowrappers .rightbrief .text-title{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 800;
 }
 
-section .prowrappers .rightbrief .texttoggle .toggle-icon,
-section .prowrappers .rightbrief .texttoggle .toggle-icon2{
-    width: 16px;
-    height: 16px;
+.toggle-icon{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 5px;
 }
 
-section .prowrappers .rightbrief .text-description,
-section .prowrappers .rightbrief .text-description2{
+section .prowrappers .rightbrief .text-desc{
     display: none;
-    padding: 0 30px 0px;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 10px;
 }
 
-section .prowrappers .rightbrief .text-description{
-    margin-bottom: 30px;
-}
-
-section .prowrappers .rightbrief .text-description.hide,
-section .prowrappers .rightbrief .text-description2.hide{
+section .prowrappers .rightbrief .text-desc.open{
     display: block;
 }
-
-section .prowrappers .rightbrief .text-description2.hide{
-    display: block;
- }
 
 section .prowrappers .rightbrief .qtydetails .qtynumbers{
     display:flex;
@@ -522,16 +472,15 @@ section .prowrappers .rightbrief .colordetails h1{
     margin-bottom: 10px;
  }
 
- @media (max-width: 768px){
+ @media (max-width: 1024px){
 
+    .menutab{
+        padding-left: 20px;
+    }
 
     section .prowrappers .rightbrief .colordetails{
     padding-left: 20px;
  }
-
-    section .prowrappers .rightbrief .texttoggle p{
-        font-size: 100%;
-    }
 
     section .prowrappers .rightbrief .colordetails h1{
         font-size: 20px;
@@ -580,14 +529,14 @@ section .prowrappers .rightbrief .sizedetails .sizeguide{
 }
 
 .modal{
-        position: fixed;
-        top: 0;
-        left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal .bgoverlay {
@@ -613,11 +562,11 @@ section .prowrappers .rightbrief .sizedetails .sizeguide{
   }
 
   .modalBox ul{
-display: flex;
+    display: flex;
 }
 
 .modalBox ul li{
-width: calc(100%/4);
+    width: calc(100%/4);
 }
 
 .modalBox ul li strong{
@@ -625,26 +574,25 @@ width: calc(100%/4);
    font-size: 15px;
     }
 
-     .modalBox ul li>p{
-             font-weight: normal;
-             font-size: 15px;
-             padding: 0;
-             margin: 0;
-             color: red;
-              }
+.modalBox ul li>p{
+    font-weight: normal;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    color: red;
+}
     
 
-  .modalBox .closebtn {
+.modalBox .closebtn {
     position: absolute;
     top: 13px;
     right: 15px;
   }
-
-  .hidden{
+.hidden{
       display: none;
   }
 
-  .stop-scroll{
+.stop-scroll{
     overflow-y: hidden;
   }
 
@@ -661,17 +609,17 @@ section .prowrappers .rightbrief .sizedetails span{
  }
 
 section .prowrappers .rightbrief .sizedetails span:hover{
-color: #fff;
-background-color: #ae5761;
+    color: #fff;
+    background-color: #ae5761;
  }
 
- @media (max-width: 768px){
+ @media (max-width: 1024px){
 
-    section .prowrappers .rightbrief .sizedetails{
+section .prowrappers .rightbrief .sizedetails{
         padding-left: 20px;
      }
 
-    section .prowrappers .rightbrief .sizedetails .sizeguide{
+section .prowrappers .rightbrief .sizedetails .sizeguide{
         position: absolute;
         top: 3px;
         right: 35px;
@@ -710,29 +658,28 @@ background-color: #ae5761;
         right: 20px;
       }
 
-      .modalBox ul{
+    .modalBox ul{
         display: flex;
         flex-wrap: wrap;
         padding-top: 10px;
         }
         
-        .modalBox ul li{
+    .modalBox ul li{
         width: 100%;
         margin-bottom: 15px;
         font-size: 14px;
         }
         
-        .modalBox ul li strong{
-           font-weight: 800;
-           font-size: 15px;
+    .modalBox ul li strong{
+        font-weight: 800;
+        font-size: 15px;
             }
 
-        .modalBox ul li>p{
-                font-weight: normal;
-                font-size: 14px;
-                color: red;
+    .modalBox ul li>p{
+        font-weight: normal;
+        font-size: 14px;
+        color: red;
                  }
-         
  }
 
 
@@ -776,7 +723,7 @@ section .prowrappers .rightbrief .pricedetails h1{
     box-sizing: border-box;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
 
     section .prowrappers .rightbrief .qtydetails{
         padding-left: 20px;
@@ -812,7 +759,7 @@ section .prowrappers .rightbrief .onlinebtn:hover a{
     color: #fff;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
 
     section .prowrappers .rightbrief .pricedetails{
         height: 50px;
@@ -841,24 +788,19 @@ section .prowrappers .rightbrief .onlinebtn:hover a{
         border-top: 5px solid #333;
         border-bottom: 0;
     }
-
-
 }
-
 
 section .youmay{
     border-bottom: 5px solid #333;
 }
 
 .youmay .youmaytitle{
-height: 12vh;
-border-bottom: 5px solid #333;
-display: flex;
-
-
+    height: 12vh;
+    border-bottom: 5px solid #333;
+    display: flex;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
 
     section .youmay{
         border-bottom: 0;
@@ -869,18 +811,17 @@ display: flex;
         border-bottom: 5px solid #333;
         display: flex;
     }
-        
 }
 
 .youmay .youmaytitle .ybigtitle{
-width: calc(100%/2);
-height: 100%;
-border-right: 5px solid #333;
-box-sizing: border-box;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #ae5761;
+    width: calc(100%/2);
+    height: 100%;
+    border-right: 5px solid #333;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ae5761;
 }
 
 .youmay .youmaytitle .ybigtitle h1{
@@ -906,30 +847,28 @@ background-color: #ae5761;
     position: relative;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
 
     .youmay .youmaytitle .ybigtitle h1{
         font-size: 30px;
         font-weight: 800;
-        }
+    }
 
-        .youmay .youmaytitle .ybigtitle{
-            width: 100%;
-            height: 50px;
-            border-right: 0;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #fff;
-            }
+    .youmay .youmaytitle .ybigtitle{
+        width: 100%;
+        height: 50px;
+        border-right: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
 
-            .youmay .youmaytitle .leftbtn{
-               display: none;
-            }
-        
+    .youmay .youmaytitle .leftbtn{
+       display: none;
+    }
 }
-
 
 .youmay .youmaytitle .leftbtn .swiper-button-next,
 .youmay .youmaytitle .leftbtn .swiper-button-prev{
@@ -1039,7 +978,7 @@ padding-top: 10px;
 .youmaymobileslide .mySwiper .swiper-wrapper .swiper-slide .producttext{
         height: 25px;
         margin: auto;
-        }
+}
     
 
 .youmaymobileslide .mySwiper .swiper-wrapper .swiper-slide .seemore{
@@ -1062,10 +1001,10 @@ padding-top: 10px;
         
 .youmaymobileslide .swiper-button-next,
 .youmaymobileslide .swiper-button-prev{
-color: #333;
+    color: #333;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     .youmay .swiper.mySwiper{
         display: none;
         

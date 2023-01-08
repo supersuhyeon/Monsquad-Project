@@ -23,39 +23,19 @@ new Swiper(".prowrappers .mySwiper", {
     }
   });
 
-
-
-//리팩토링필요
-
-const descripEl = document.querySelector('.text-description')
-const descripEl2 = document.querySelector('.text-description2')
-const toggleBtn = document.querySelector('.toggle-icon')
-const toggleBtn2 = document.querySelector('.toggle-icon2')
-let isHideDescription = false;
-
-toggleBtn.addEventListener('click', function(){
-    isHideDescription = !isHideDescription
-    if(isHideDescription){
-        //hide
-        descripEl.classList.add('hide') // display:block
-    }else{
-        //show
-        descripEl.classList.remove('hide')
-    }
+const menuContainers = document.querySelectorAll('.menutab-container')
+menuContainers.forEach((menuContainer)=>{
+  let doesDescriptionShow = false;
+  const test = menuContainer.children[0]
+  test.addEventListener('click',()=>{
+    doesDescriptionShow = !doesDescriptionShow
+    if(doesDescriptionShow){
+      menuContainer.children[1].classList.add('open')
+  }else{
+    menuContainer.children[1].classList.remove('open')
+  }  
 })
-
-
-toggleBtn2.addEventListener('click', function(){
-    isHideDescription = !isHideDescription
-    if(isHideDescription){
-        //hide
-        descripEl2.classList.add('hide')
-    }else{
-        //show
-        descripEl2.classList.remove('hide')
-    }
 })
-
 
 
 function count(type)  {
