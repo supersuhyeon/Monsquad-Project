@@ -1,304 +1,10 @@
-/* COMMON */
-
-body{
-    font-family: 'Open Sans', sans-serif;
-    color: #333;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.2;
-    overflow-x: hidden;
-    
-}
-
-img{
-    display: block;
-}
-
-a{
-    text-decoration: none;
-    color: #333;
-    display: block;
-}
-
-.marginspace{
-    margin-left: 15vw;
-}
-
-.marginguide{
-    margin-left: 20px;
-}
-
-/* Menu Section */
-.leftmenubar{
-    width: 15vw;
-    height: 100%;
-    background-color: #fff;
-    position: fixed;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: 5px solid #333;
-
-}
-
-.leftmenubar .menuicon{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    height: 48px;
-    cursor: pointer;
-}
-
-.btnrotate{
-    transform: rotate(-360deg);
-    transition: all 0.8s ease-in-out;
-}
-
-.btnreverse{
-    transform: rotate(180deg);
-    transition: all 0.8s ease-in-out;
-}
-
-.rightmenubar{
-    width: 85vw;
-    height: 100%;
-    background-color: #fff;
-    position: fixed;
-    z-index: 99;
-    transform: translate(-100vw,0);
-    /* opacity: 0; */
-    transition: opacity 0.8s ease, transform 0.8s 0.3s ease;
-
-}
-
-.rightmenubar.active{
-    transform: translate(15vw,0);
-    /* opacity: 1; */
-    transition: opacity 0.5s ease, transform 0.8s 0.3s ease;
-}
-
-.rightmenubar .toplogo{
-    width: 100%;
-    height: 15vh;
-    /* background-color: blueviolet; */
-    position: relative;
-    border-bottom: 5px solid #333;
-}
-
-.rightmenubar .bottommenu{
-    height: 92vh;
-}
-
-.rightmenubar .toplogo img{
-    width: 250px;
-    height: 82px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 20px;
-    margin: auto 0;
-    cursor: pointer;
-}
-
-.bottommenu{
-    display: flex;
-}
-
-.bottommenu .menutext{
-    width: calc(85vw/2);
-    height: 100%;
-    /* background-color: pink; */
-}
-.bottommenu .menutext ul li{
-    border-bottom: 5px solid #333;
-    height: 100%;
-    padding: 15px 20px;
-    font-size: 65px;
-    font-weight: 800;
-    box-sizing: border-box;
-}
-
-.bottommenu .menutext ul li:nth-child(1),
-.bottommenu .menutext ul li:nth-child(6){
-    height: 100px;
-}
-
-.bottommenu .menutext ul li:nth-child(2):hover,
-.bottommenu .menutext ul li:nth-child(3):hover,
-.bottommenu .menutext ul li:nth-child(4):hover,
-.bottommenu .menutext ul li:nth-child(5):hover{
-background-color: #ae5761;
-}
-
-.bottommenu .menutext ul li:nth-child(2):hover a,
-.bottommenu .menutext ul li:nth-child(3):hover a,
-.bottommenu .menutext ul li:nth-child(4):hover a,
-.bottommenu .menutext ul li:nth-child(5):hover a{
-color: #fff;
-}
-
-.bottommenu .menutext ul li:first-child{
-border-top: 0;
-}
-
-.bottommenu .menuimg{
-    width: calc(85vw/2);
-    height: 100%;
-    border-left: 5px solid #333;
-}
-
-.swiper-slide img{
-    max-width: 100%;
-    height: auto;
-}
-
-.menuimg .swiper-pagination{
-   position: absolute;
-   left: 340px !important;
-}
-
-.menuimg .swiper-pagination .swiper-pagination-bullet{
-    margin-right: 2px;
-    background-image: url("/bullet1.png");
-    background-repeat: no-repeat;
-    width: 77px;
-    height: 17px;
-    outline: none;
-    background-color: transparent;
-    border-radius: 0%;
-}
-
-.menuimg .swiper-pagination .swiper-pagination-bullet:last-child{
-margin-right: 0;
-}
-
-.menuimg .swiper-pagination .swiper-pagination-bullet-active{
-background-image: url("/bullet-on.png");
-}
-
-.menuicon-mobile{
-    position: absolute;
-    top: 30px;
-    right: 20px;
-    display: none;
-
-}
-
-.menuicon-mobile .material-icons{
-font-size: 50px;
-}
-
-.dropmenu-mobile{
-  margin-top: 15vh;
-  height: 100%;
-  position: fixed;
-  width: 100vw;
-  z-index: 80;
-  background-color: #fff;
-  transition: transform 0.8s ease;
-  display: none;
-}
-
-.dropmenu-mobile li{
-    border-bottom: 5px solid #333;
-}
-
-.dropmenu-mobile li:hover{
-   background-color: #ae5761;
-}
-
-.dropmenu-mobile .dropdown-mobile li:hover a{
-color: #fff;
-}
-
-.dropmenu-mobile .dropdown-mobile li a{
-    color: #333;
-    font-size: 30px;
-    font-weight: 800;
-    text-align: center;
-}
-
-.dropmenu-mobile .dropdown-mobile li a{
-padding: 51px;
-}
-
-
-
-@media (max-width: 1024px){
-    .rightmenubar{
-        display: none;
-    }
-
-    .leftmenubar{
-        display: none;
-    }
-
-    .marginspace{
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .home_logo.mobile{
-        position: fixed;
-        z-index: 99;
-        height: 15vh;
-        background-color: #fff;
-    }
-
-    .menuicon-mobile{
-        display: block;
-        z-index: 99;
-        position: fixed;
-    }
-
-    .dropmenu-mobile{
-        display: none;
-    }
-
-    .dropmenu-mobile.active{
-        display: block;
-        z-index: 90;
-    }
-}
-
-
-/* HEADER SECTION */
-
-header{
-    /* width: 100%; */
-    position: relative;
-}
-
-header .home_logo{
-    width: 100%;
-    height: 15vh;
-    position: relative;
-    border-bottom: 5px solid #333;
-}
-
-header .home_logo img{
-    width: 250px;
-    height: 82px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 20px;
-    margin: auto 0;
-    cursor: pointer;
-}
-
-/* ABOUT SECTION */
-
 .aboutintro{
-border-bottom: 5px solid #333;
+    border-bottom: 5px solid var(--accent-color);
 }
 
 .aboutintro .abouttitle{
     height: 12vh;
-    border-bottom: 5px solid #333;
-    /* background-color: #ae5761; */
+    border-bottom: 5px solid var(--accent-color);
     display: flex;
     align-items: center;
 }
@@ -319,7 +25,6 @@ border-bottom: 5px solid #333;
     display: flex;
     justify-content: center;
     margin: 20px 0 20px;
-
 }
 
 .mobilestoreimg img{
@@ -349,7 +54,7 @@ border-bottom: 5px solid #333;
 
 
 .aboutintro .aboutbrief .aboutstickers img:last-child{
-margin-right: 0;
+    margin-right: 0;
 }
 
 .aboutintro .aboutbrief p{
@@ -359,23 +64,16 @@ margin-right: 0;
 }
 
 @media (max-width: 1024px){
-    .aboutintro{
-        padding-top: 15vh;
-        height: 100%;
-
-    }
-    .marginguide{
-        margin: 0 20px 0;
-    }
 
     .aboutintro .abouttitle{
-        overflow: hidden;
+        padding-top: 13vh;
+        height: 100%;
     }
 
     .aboutintro .abouttitle h1{
         font-size: 30px;
+        padding: 20px 0;
         overflow: hidden;
-       
     }
 
     .aboutintro .aboutbrief h2{
@@ -399,22 +97,16 @@ margin-right: 0;
         height: auto;
         margin-top: 30px;
     }
-
-    * {
-        overflow-x: hidden;
-    }
-
 }
 
 /* SECTION */
-
 section .aboutlogo{
-    border-bottom: 5px solid #333;
+    border-bottom: 5px solid var(--accent-color);
 }
 
 section .aboutlogo .logotitle{
     height: 12vh;
-    border-bottom: 5px solid #333;
+    border-bottom: 5px solid var(--accent-color);
     display: flex;
     align-items: center;
 }
@@ -438,11 +130,11 @@ section .aboutlogo .logobrief p{
 }
 
 section .aboutcolor{
-    border-bottom: 5px solid #333;
+    border-bottom: 5px solid var(--accent-color);
 }
 section .aboutcolor .colortitle{
     height: 12vh;
-    border-bottom: 5px solid #333;
+    border-bottom: 5px solid var(--accent-color);
     display: flex;
     align-items: center;
 }
@@ -476,7 +168,7 @@ section .aboutcolor .colortitle h1{
 }
 
 section .aboutcolor .colorwrapper{
-    border-bottom: 5px solid #333;
+    border-bottom: 5px solid var(--accent-color);
     display: flex;
 }
 
@@ -484,13 +176,13 @@ section .aboutcolor .colorwrapper .colordetails{
 
     width: calc(85vw/2);
     height: 300px;
-    border-right: 5px solid #333;
+    border-right: 5px solid var(--accent-color);
 }
 
 section .aboutcolor .colorwrapper .colordetails span{
     display: block;
     height: calc(300px/3);
-    border-bottom: 5px solid #333;
+    border-bottom: 5px solid var(--accent-color);
     box-sizing: border-box;
 
 }
@@ -505,7 +197,7 @@ section .aboutcolor .colorwrapper .colordetails span::after{
 }
 
 section .aboutcolor .colorwrapper .colordetails span:hover::after{
-width: 100%;
+    width: 100%;
 }
 
 section .aboutcolor .colorwrapper .colordetails span p{
@@ -518,7 +210,7 @@ section .aboutcolor .colorwrapper .colordetails span:hover p{
 }
 
 section .aboutcolor .colorwrapper .colordetails span:nth-child(3){
-    border-bottom: 5px solid #333;
+    border-bottom: 5px solid var(--accent-color);
 }
 
 section .aboutcolor .colorwrapper .onecolor{
@@ -533,7 +225,7 @@ section .aboutcolor .colordiverse .btmcolor{
 }
 
 section .aboutcolor .colordiverse .topcolor{
-    border-bottom: 5px solid #333;
+    border-bottom: 5px solid var(--accent-color);
 }
 
 section .aboutcolor .colordiverse p{
@@ -546,7 +238,7 @@ section .aboutcolor .colordiverse .topcolor div,
 section .aboutcolor .colordiverse .btmcolor div{
     width: calc(85vw/2);
     height: 300px;
-    border-right: 5px solid #333;
+    border-right: 5px solid var(--accent-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -554,47 +246,45 @@ section .aboutcolor .colordiverse .btmcolor div{
 
 section .aboutcolor .colordiverse .topcolor div:nth-child(2),
 section .aboutcolor .colordiverse .btmcolor div:nth-child(2){
-border: 0;
+    border: 0;
 }
 
 section .aboutcolor .colordiverse .topcolor div:nth-child(1){
-background-color: #333;
-color: #fff;
+    background-color: var(--accent-color);
+    color: #fff;
 }
 section .aboutcolor .colordiverse .topcolor div:nth-child(2){
-background-color: #fff;
-color: #333;
+    background-color: #fff;
+    color: #333;
 }
 section .aboutcolor .colordiverse .btmcolor div:nth-child(1){
-background-color: #fff;
-color: #ae5761;
+    background-color: #fff;
+    color: #ae5761;
 }
 
 section .aboutcolor .colordiverse .btmcolor div:nth-child(2){
-background-color: #ae5761;
-color: #333;
+    background-color: #ae5761;
+    color: var(--accent-color);
 }
 
 @media (max-width: 1024px){
 
     section .aboutcolor .colorwrapper{
-        border-bottom: 5px solid #333;
+        border-bottom: 5px solid var(--accent-color);
     }
-    
+        
     section .aboutcolor .colorwrapper .colordetails{
         width: 100%;
         height: 100%;
         border-right: 0;
     }
-    
-    section .aboutcolor .colorwrapper .colordetails span{
         
+    section .aboutcolor .colorwrapper .colordetails span{
         height: 50px;
-        border-bottom: 5px solid #333;
+        border-bottom: 5px solid var(--accent-color);
         display: flex;
         align-items: center;
         padding-left: 20px;
-    
     }
 
     section .aboutcolor .colorwrapper .colordetails span p{
@@ -602,23 +292,18 @@ color: #333;
         padding: 0;
         overflow: hidden;
     }
-
     section .aboutcolor .colorwrapper .onecolor{
         display: none;
     }
-
     section .aboutcolor .colorwrapper .colordetails span::after{
         display: none;
     }
-    
     section .aboutcolor .colorwrapper .colordetails span:hover::after{
-    display: none;
+        display: none;
     }
-
     section .aboutcolor .colorwrapper .colordetails span:hover p{
         color: #fff
     }
-
     section .aboutcolor .colorwrapper .colordetails span:hover{
         background-color: #ae5761;
     }
@@ -628,21 +313,19 @@ color: #333;
     }
 
     section .aboutcolor .colordiverse .topcolor div,
-section .aboutcolor .colordiverse .btmcolor div{
-    width: 100%;
-    height: 200px;
-    border-right: 5px solid #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    section .aboutcolor .colordiverse .btmcolor div{
+        width: 100%;
+        height: 200px;
+        border-right: 5px solid var(--accent-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-section .aboutcolor .colordiverse p{
-    font-size: 20px;
-    padding: 0;
-    overflow: hidden;
-}
-
-
+    section .aboutcolor .colordiverse p{
+        font-size: 20px;
+        padding: 0;
+        overflow: hidden;
+    }
 }
 
