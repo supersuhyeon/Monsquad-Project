@@ -399,7 +399,7 @@ section .wheretobuy .addresswrapper .laaddress p{
 @media (max-width: 1024px){
 section .wheretobuy .addresswrapper .kraddress p,
 section .wheretobuy .addresswrapper .laaddress p{
-    font-size: 100%;
+    font-size: 19px;
     padding-right: 20px;
     overflow: hidden;
 }
